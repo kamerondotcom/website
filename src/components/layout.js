@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-
+import Helmet from "react-helmet";
 import Header from "./header";
 import "./layout.scss";
 
@@ -27,6 +27,10 @@ const Layout = ({ children }) => (
       <>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div>
+          <Helmet>
+            <script src="/js/pace.js" />
+            <link href="/css/pace-theme.css" rel="stylesheet" />
+          </Helmet>
           <main>{children}</main>
           {/* <footer>
             © {new Date().getFullYear()}, Built with
