@@ -25,18 +25,13 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div>
           <Helmet>
             <script src="/js/pace.js" />
             <link href="/css/pace-theme.css" rel="stylesheet" />
+            <meta name="google-site-verification" content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM" />
           </Helmet>
           <main>{children}</main>
-          {/* <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer> */}
         </div>
       </>
     )}
