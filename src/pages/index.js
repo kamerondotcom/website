@@ -5,13 +5,13 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
-import "./../scss/home.scss";
+import styles from "./../scss/home.scss";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Kameron Zach" />
-    <Div100vh className="home">
-      <div className="home__main">
+    <Div100vh className={styles.home}>
+      <div className={styles.home__main}>
         <h1>
           Kameron Zach
           <br />

@@ -18,7 +18,14 @@ module.exports = {
         fonts: [`neuton\:400,700,800`]
       }
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          localIdentName: "[sha1:hash:hex:6]"
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
