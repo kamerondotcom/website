@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
-import styles from "./../scss/home.scss";
+import styles from "./../scss/home.module.scss";
 
 const IndexPage = () => (
   <Layout>
