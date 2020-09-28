@@ -186,7 +186,7 @@ textarea {
 }
 html {
   box-sizing: border-box;
-  overflow: hidden !important;
+  // overflow: hidden !important;
 }
 * {
   box-sizing: inherit;
@@ -200,7 +200,7 @@ html {
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: "Neuton", serif;
-  overflow: hidden !important;
+  // overflow: hidden !important;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
