@@ -1,7 +1,12 @@
+const cssLoaderOptions =
+  process.env.NODE_ENV !== "development"
+    ? { localIdentName: "[sha1:hash:hex:6]" }
+    : {};
+
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: ``
+    title: `Kameron Zach Portfolio`,
+    description: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -9,22 +14,20 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`neuton\:400,700,800`]
-      }
+        fonts: [`neuton\:400,700,800`],
+      },
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        cssLoaderOptions: {
-          localIdentName: "[sha1:hash:hex:6]"
-        }
-      }
+        cssLoaderOptions: cssLoaderOptions,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -37,11 +40,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
-      }
-    }
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ]
+  ],
 };

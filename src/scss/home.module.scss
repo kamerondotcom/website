@@ -65,9 +65,11 @@ body {
 .home {
   // min-height: 100vh;
   position: relative;
+  // padding: 40px 0 50px 0;
 
   &__main {
-    padding: 0 20px;
+    padding: 40px 20px 80px 20px;
+
     @media only screen and (max-width: 768px) {
       padding: 0 20px;
     }
@@ -90,6 +92,7 @@ body {
     //   }
   }
   &__header {
+    padding: 0px 34px;
     @media only screen and (max-width: 768px) {
       margin: 100px 0 0 0;
     }
@@ -112,6 +115,10 @@ body {
     }
   }
   &__works {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    padding: 30px 40px 30px 40px;
     h2 {
       margin: 0;
       font-size: 1.6rem;
