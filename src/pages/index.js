@@ -72,22 +72,24 @@ const IndexPage = () => (
                   src="/images/inc-cap.png"
                 />
               </a>
-              <a target="_blank" href="https://www.katharinekidd.com">
-                <img
-                  className={styles.projectThumbs__item}
-                  src="/images/katharine-kidd.png"
-                />
-              </a>
+
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   className={styles.projectThumbs__item}
                   src="/images/myfriendsplace.png"
                 />
               </a>
+
               <a target="_blank" href="https://www.trixiecosmetics.com">
                 <img
                   className={styles.projectThumbs__item}
                   src="/images/trixie-cosmetics.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.katharinekidd.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/katharine-kidd.png"
                 />
               </a>
               <a target="_blank" href="https://www.trixieandkatya.com">
