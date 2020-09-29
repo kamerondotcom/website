@@ -27,9 +27,14 @@ const IndexPage = () => (
             </div>
             <p>
               Worked with a small creative team to design and brand Digital
-              Pride Fest. Built custom ticketing admin/reporting, live stream
-              tools for artist capture and broadcast using SaaS tools like
-              Dolby.io and Mux among others.
+              PrideFest a digital live streaming event featuring 70+ live events
+              with LGTBQ artists and drag performers from around the world.
+              Built custom ticketing admin/reporting, live stream tools for
+              artist capture and broadcast using SaaS tools like Dolby.io and
+              Mux among others.
+            </p>
+            <p>
+              Technologies included Next.js, React, Redis, Mongo and Express.
             </p>
             <div className={styles.projectThumbs}>
               <video className={styles.projectThumbs__item} autoPlay muted loop>
