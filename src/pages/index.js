@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div className={styles.home__works}>
         <ul>
           <li className={styles.project}>
-            <h2>Director, Digital Experience</h2>
+            <h2>Director, Digital Experience and Development</h2>
             <h3>Digital Pride Fest & Digital Drag Fest, PEG</h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - Summer 2020
