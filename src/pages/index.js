@@ -126,7 +126,7 @@ const IndexPage = () => (
                   muted
                   loop
                 >
-                  <source src="/video/equinox-1.mp4" />
+                  <source src="/video/equinox-1a.mp4" />
                 </video>
               </a>
               <a target="_blank" href="https://www.equinox.com">
