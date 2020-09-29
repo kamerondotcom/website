@@ -19,7 +19,7 @@ const IndexPage = () => (
       </div>
       <div className={styles.home__works}>
         <ul>
-          <li>
+          <li className={styles.project}>
             <h2>Director, Digital Experience</h2>
             <h3>Digital Pride Fest & Digital Drag Fest, PEG</h3>
             <p>
@@ -29,9 +29,10 @@ const IndexPage = () => (
               Dolby.io and Mux among others.
             </p>
           </li>
-          <li>
+          <li className={styles.project}>
             <h2>Partner / CTO</h2>
             <h3>Let's Build / Let's Stream</h3>
+            <div className={styles.projectDate}>2012 - 2020</div>
             <p>
               Managed a small team to design and build digital experiences and
               business solutions for clients like Equinox, HBO, Dermalogica,
@@ -91,9 +92,12 @@ const IndexPage = () => (
               </a>
             </div>
           </li>
-          <li>
+          <li className={styles.project}>
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
+            <div className={styles.projectDate}>
+              Los Angeles, CA — 2019 - Present
+            </div>
             <p>
               Led small team of engineers to relaunch their flagship brand
               website (equinox.com) on a completely new technology (Next.js,
@@ -134,26 +138,29 @@ const IndexPage = () => (
               </a>
             </div>
           </li>
-          <li>
+          <li className={styles.project}>
             <h2>Javascript Course Instructor</h2>
             <h3>General Assembly</h3>
+            <div className={styles.projectDate}>2014 - 2016</div>
             <p>
               Taught Javascript (ES6) and computer science basics to a group of
               14-18 students during a 12- week evening program.
             </p>
           </li>
-          <li>
+          <li className={styles.project}>
             <h2>Associate Producer</h2>
             <h3>MTV Networks</h3>
+            <div className={styles.projectDate}>2009 - 2012</div>
             <p>
               Multimedia / backpack producer for MTV brands like MTV News, Logo
               and VH1. Shot, edited and produced on air, online and integrated
               marketing video projects.
             </p>
           </li>
-          <li>
+          <li className={styles.project}>
             <h2>Summer Associate</h2>
             <h3>MTV Networks</h3>
+            <div className={styles.projectDate}>Summer 2009</div>
             <p>
               Participated in highly competitive 12-week post college work
               training program with MTV Networks where I worked hands-on

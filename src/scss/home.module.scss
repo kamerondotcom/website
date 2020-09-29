@@ -22,6 +22,15 @@ body {
   margin: 0;
 }
 
+.project {
+  position: relative;
+}
+
+.project-date {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
 .project-thumbs {
   margin: 20px 0 0 0;
   display: flex;
