@@ -43,6 +43,7 @@ body {
   display: flex;
   overflow-x: scroll;
   padding: 0 0 12px 0;
+  align-items: flex-start;
   @media only screen and (max-width: 768px) {
     display: block;
   }
@@ -60,15 +61,17 @@ body {
       max-width: none;
       display: inline-block;
       margin: 10px 5px 0px 5px;
-      vertical-align: top;
     }
     &-video {
       margin: 0 20px 0px 0;
       max-width: calc(72vw / 3);
-      object-fit: cover;
+      height: 296px;
+      // object-fit: cover;
+      align-items: flex-start;
       @media only screen and (max-width: 768px) {
-        width: calc(50% - 10px);
-        max-width: none;
+        // max-width: calc(72vw);
+        max-width: calc(50% - 10px);
+        height: auto;
         display: inline-block;
         margin: 10px 5px 0px 5px;
         vertical-align: top;
