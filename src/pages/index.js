@@ -38,11 +38,11 @@ const IndexPage = () => (
             </p>
             <div className={styles.projectThumbs}>
               <video className={styles.projectThumbs__item} autoPlay muted loop>
-                <source src="/video/pride-fest-1.mp4" />
+                <source src="/video/pride-fest-1.sameformat.mp4" />
               </video>
 
               <video className={styles.projectThumbs__item} autoPlay muted loop>
-                <source src="/video/pride-fest-2.mp4" />
+                <source src="/video/pride-fest-2.sameformat.mp4" />
               </video>
 
               <video className={styles.projectThumbs__item} autoPlay muted loop>
@@ -153,7 +153,7 @@ const IndexPage = () => (
                   muted
                   loop
                 >
-                  <source src="/video/equinox-3.mp4" />
+                  <source src="/video/equinox-3.sameformat.mp4" />
                 </video>
               </a>
               <a target="_blank" ti href="https://www.equinox.com">
@@ -163,7 +163,7 @@ const IndexPage = () => (
                   muted
                   loop
                 >
-                  <source src="/video/equinox-1a.mp4" />
+                  <source src="/video/equinox-1a.sameformat.mp4" />
                 </video>
               </a>
               <a target="_blank" href="https://www.equinox.com">
@@ -173,7 +173,7 @@ const IndexPage = () => (
                   muted
                   loop
                 >
-                  <source src="/video/equinox-2.mp4" />
+                  <source src="/video/equinox-2.sameformat.mp4" />
                 </video>
               </a>
             </div>
