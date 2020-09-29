@@ -5,7 +5,7 @@ const cssLoaderOptions =
 
 module.exports = {
   siteMetadata: {
-    title: `Kameron Zach Portfolio`,
+    title: `Kameron Zach`,
     description: ``,
   },
   plugins: [

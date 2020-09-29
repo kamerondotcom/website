@@ -8,7 +8,7 @@ import styles from "./../scss/home.module.scss";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Kameron Zach" />
+    <SEO title="Portfolio" />
     <div className={styles.home__main}>
       <div className={styles.home__header}>
         <h1>
