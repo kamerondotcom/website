@@ -78,6 +78,28 @@ const IndexPage = () => (
                 />
               </a>
 
+              <video
+                title="Route Calculator Hyperloop One"
+                alt="Route Calculator Hyperloop One"
+                className={styles.projectThumbs__itemVideo}
+                autoPlay
+                muted
+                loop
+              >
+                <source src="/video/routes.mp4" />
+              </video>
+
+              <video
+                title="Simulator Hyperloop One"
+                alt="Simulator Hyperloop One"
+                className={styles.projectThumbs__itemVideo}
+                autoPlay
+                muted
+                loop
+              >
+                <source src="/video/simulator.mp4" />
+              </video>
+
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   className={styles.projectThumbs__item}
