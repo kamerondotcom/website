@@ -72,6 +72,12 @@ const IndexPage = () => (
                   src="/images/inc-cap.png"
                 />
               </a>
+              <a target="_blank" href="https://www.katharinekidd.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/katharine-kidd.png"
+                />
+              </a>
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   className={styles.projectThumbs__item}
@@ -168,7 +174,7 @@ const IndexPage = () => (
             </p>
           </li>
           <li>
-            <h2>Bachelor Video / Multimedia Production</h2>
+            <h2>Bachelor of Arts - Video/Film Production</h2>
             <h3>Webster University, Saint Louis Missouri</h3>
           </li>
         </ul>
