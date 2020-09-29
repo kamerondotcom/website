@@ -54,6 +54,54 @@ const IndexPage = () => (
               </video>
             </div>
           </li>
+
+          <li className={styles.project}>
+            <h2>Senior Engineer</h2>
+            <h3>Equinox</h3>
+            <div className={styles.projectDate}>
+              Los Angeles, CA / New York, NY — 2019 - Present
+            </div>
+            <p>
+              Led small team of engineers to relaunch their flagship brand
+              website (equinox.com) on a completely new technology (Next.js,
+              React) stack and CMS (Contentful). Worked with team to break up
+              intricate design systems (from Work & Co), animations with the
+              goal to balance aesthetic presentation, usability, conversion and
+              performance.
+            </p>
+            <div className={styles.projectThumbs}>
+              <a target="_blank" href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-3.sameformat.mp4" />
+                </video>
+              </a>
+              <a target="_blank" ti href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-1a.sameformat.mp4" />
+                </video>
+              </a>
+              <a target="_blank" href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-2.sameformat.mp4" />
+                </video>
+              </a>
+            </div>
+          </li>
           <li className={styles.project}>
             <h2>Partner / CTO</h2>
             <h3>Let's Build / Let's Stream</h3>
@@ -135,53 +183,6 @@ const IndexPage = () => (
                   className={styles.projectThumbs__item}
                   src="/images/trixie-katya.png"
                 />
-              </a>
-            </div>
-          </li>
-          <li className={styles.project}>
-            <h2>Senior Engineer</h2>
-            <h3>Equinox</h3>
-            <div className={styles.projectDate}>
-              Los Angeles, CA / New York, NY — 2019 - Present
-            </div>
-            <p>
-              Led small team of engineers to relaunch their flagship brand
-              website (equinox.com) on a completely new technology (Next.js,
-              React) stack and CMS (Contentful). Worked with team to break up
-              intricate design systems (from Work & Co), animations with the
-              goal to balance aesthetic presentation, usability, conversion and
-              performance.
-            </p>
-            <div className={styles.projectThumbs}>
-              <a target="_blank" href="https://www.equinox.com">
-                <video
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-3.sameformat.mp4" />
-                </video>
-              </a>
-              <a target="_blank" ti href="https://www.equinox.com">
-                <video
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-1a.sameformat.mp4" />
-                </video>
-              </a>
-              <a target="_blank" href="https://www.equinox.com">
-                <video
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-2.sameformat.mp4" />
-                </video>
               </a>
             </div>
           </li>
