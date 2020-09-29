@@ -71,7 +71,7 @@ const IndexPage = () => (
                   <source src="/video/hyperloop-one.mp4" />
                 </video>
               </a> */}
-              <a target="_blank" href="https://www.inc-cap.org">
+              <a target="_blank" href="https://www.inc-cap.com">
                 <img
                   className={styles.projectThumbs__item}
                   src="/images/inc-cap.png"
