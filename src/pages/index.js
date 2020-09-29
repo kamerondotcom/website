@@ -22,7 +22,12 @@ const IndexPage = () => (
           <li>
             <h2>Director, Digital Experience</h2>
             <h3>Digital Pride Fest & Digital Drag Fest, PEG</h3>
-            <p></p>
+            <p>
+              Managed a small creative team to design and brand Digital Pride
+              Fest. Built custom ticketing admin/reporting, live stream tools
+              for artist capture and broadcast using SaaS tools like Dolby.io
+              and Mux among others.
+            </p>
           </li>
           <li>
             <h2>Partner / CTO</h2>
