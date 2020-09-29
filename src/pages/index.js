@@ -119,6 +119,16 @@ const IndexPage = () => (
               goal to balance aesthetic presentation, usability and performance.
             </p>
             <div className={styles.projectThumbs}>
+              <a target="_blank" href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-3.mp4" />
+                </video>
+              </a>
               <a target="_blank" ti href="https://www.equinox.com">
                 <video
                   className={styles.projectThumbs__item}
@@ -137,16 +147,6 @@ const IndexPage = () => (
                   loop
                 >
                   <source src="/video/equinox-2.mp4" />
-                </video>
-              </a>
-              <a target="_blank" href="https://www.equinox.com">
-                <video
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-3.mp4" />
                 </video>
               </a>
             </div>
