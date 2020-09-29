@@ -23,10 +23,10 @@ const IndexPage = () => (
             <h2>Director, Digital Experience</h2>
             <h3>Digital Pride Fest & Digital Drag Fest, PEG</h3>
             <p>
-              Managed a small creative team to design and brand Digital Pride
-              Fest. Built custom ticketing admin/reporting, live stream tools
-              for artist capture and broadcast using SaaS tools like Dolby.io
-              and Mux among others.
+              Worked with a small creative team to design and brand Digital
+              Pride Fest. Built custom ticketing admin/reporting, live stream
+              tools for artist capture and broadcast using SaaS tools like
+              Dolby.io and Mux among others.
             </p>
           </li>
           <li>
@@ -54,6 +54,42 @@ const IndexPage = () => (
               Technologies used: React JS/Native, Express, Gatsby, Next.js,
               Python, AWS.
             </p>
+            <div className={styles.projectThumbs}>
+              {/* <a target="_blank" href="https://www.myfriendsplace.org">
+                <video
+                  className={styles.projectThumbs__itemVideo}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/hyperloop-one.mp4" />
+                </video>
+              </a> */}
+              <a target="_blank" href="https://www.inc-cap.org">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/inc-cap.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.myfriendsplace.org">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/myfriendsplace.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.trixiecosmetics.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/trixie-cosmetics.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.trixieandkatya.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/trixie-katya.png"
+                />
+              </a>
+            </div>
           </li>
           <li>
             <h2>Senior Engineer</h2>
@@ -65,6 +101,38 @@ const IndexPage = () => (
               intricate design systems (from Work & Co), animations with the
               goal to balance aesthetic presentation, usability and performance.
             </p>
+            <div className={styles.projectThumbs}>
+              <a target="_blank" ti href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-1.mp4" />
+                </video>
+              </a>
+              <a target="_blank" href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-2.mp4" />
+                </video>
+              </a>
+              <a target="_blank" href="https://www.equinox.com">
+                <video
+                  className={styles.projectThumbs__item}
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/video/equinox-3.mp4" />
+                </video>
+              </a>
+            </div>
           </li>
           <li>
             <h2>Javascript Course Instructor</h2>
@@ -91,6 +159,10 @@ const IndexPage = () => (
               training program with MTV Networks where I worked hands-on
               designing features and UX for MTV’s then social web product: Flux.
             </p>
+          </li>
+          <li>
+            <h2>Bachelor Video / Multimedia Production</h2>
+            <h3>Webster University, Saint Louis Missouri</h3>
           </li>
         </ul>
       </div>
