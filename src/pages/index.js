@@ -13,7 +13,7 @@ const IndexPage = () => (
       <div className={styles.home__header}>
         <h1>
           Kameron Zach
-          <br />
+          {/* <br /> */}
         </h1>
         <h2>Technical Director, Experience Designer</h2>
       </div>
