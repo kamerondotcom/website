@@ -212,6 +212,12 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
+      <div className={styles.contact}>
+        <h3>
+          Get in touch,{" "}
+          <a href="mailto:kamerondotcom@mac.com">kamerondotcom@mac.com</a>
+        </h3>
+      </div>
     </div>
   </Layout>
 );
