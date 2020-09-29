@@ -34,7 +34,11 @@ const IndexPage = () => (
               Mux among others.
             </p>
             <p>
-              Technologies included Next.js, React, Redis, Mongo and Express.
+              Technologies included:{" "}
+              <a target="_blank" href="https://nextjs.org/">
+                Next.js
+              </a>
+              , React, Redis, Mongo, Figma and Express.
             </p>
             <div className={styles.projectThumbs}>
               <video className={styles.projectThumbs__item} autoPlay muted loop>
@@ -75,8 +79,11 @@ const IndexPage = () => (
               of the days awards from AWWWARDS, nominated for a Digital Emmy.
             </p>
             <p>
-              Technologies used: React JS/Native, Express, Gatsby, Next.js,
-              Python, AWS.
+              Technologies included: React JS/Native, Express,{" "}
+              <a target="_blank" href="https://www.gatsbyjs.com/">
+                Gatsby
+              </a>{" "}
+              and Sketch
             </p>
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.inc-cap.com">
