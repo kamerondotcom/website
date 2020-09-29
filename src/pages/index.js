@@ -31,6 +31,19 @@ const IndexPage = () => (
               tools for artist capture and broadcast using SaaS tools like
               Dolby.io and Mux among others.
             </p>
+            <div className={styles.projectThumbs}>
+              <video className={styles.projectThumbs__item} autoPlay muted loop>
+                <source src="/video/pride-fest-1.mp4" />
+              </video>
+
+              <video className={styles.projectThumbs__item} autoPlay muted loop>
+                <source src="/video/pride-fest-2.mp4" />
+              </video>
+
+              <video className={styles.projectThumbs__item} autoPlay muted loop>
+                <source src="/video/pride-fest-3.mp4" />
+              </video>
+            </div>
           </li>
           <li className={styles.project}>
             <h2>Partner / CTO</h2>
