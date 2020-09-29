@@ -42,7 +42,7 @@ const IndexPage = () => (
               Managed a small team to design and build digital experiences and
               business solutions for clients like Equinox, HBO, Dermalogica,
               Virgin Hyperloop One, Jeremy Scott, Carolina Herrera and other
-              entertainment clients. Lead team in developing technical solution,
+              entertainment clients. Led team in developing technical solution,
               pitch and build Javascript apps / integrations to full websites
               and native apps.
             </p>
@@ -61,23 +61,12 @@ const IndexPage = () => (
               Python, AWS.
             </p>
             <div className={styles.projectThumbs}>
-              {/* <a target="_blank" href="https://www.myfriendsplace.org">
-                <video
-                  className={styles.projectThumbs__itemVideo}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/hyperloop-one.mp4" />
-                </video>
-              </a> */}
               <a target="_blank" href="https://www.inc-cap.com">
                 <img
                   className={styles.projectThumbs__item}
                   src="/images/inc-cap.png"
                 />
               </a>
-
               <video
                 title="Route Calculator Hyperloop One"
                 alt="Route Calculator Hyperloop One"
@@ -88,7 +77,6 @@ const IndexPage = () => (
               >
                 <source src="/video/routes.mp4" />
               </video>
-
               <video
                 title="Simulator Hyperloop One"
                 alt="Simulator Hyperloop One"
@@ -99,14 +87,12 @@ const IndexPage = () => (
               >
                 <source src="/video/simulator.mp4" />
               </video>
-
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   className={styles.projectThumbs__item}
                   src="/images/myfriendsplace.png"
                 />
               </a>
-
               <a target="_blank" href="https://www.trixiecosmetics.com">
                 <img
                   className={styles.projectThumbs__item}
@@ -138,7 +124,8 @@ const IndexPage = () => (
               website (equinox.com) on a completely new technology (Next.js,
               React) stack and CMS (Contentful). Worked with team to break up
               intricate design systems (from Work & Co), animations with the
-              goal to balance aesthetic presentation, usability and performance.
+              goal to balance aesthetic presentation, usability, conversion and
+              performance.
             </p>
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.equinox.com">
