@@ -23,13 +23,18 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <div>
           <Helmet>
             <script src="/js/pace.js" />
             <link href="/css/pace-theme.css" rel="stylesheet" />
-            <meta name="google-site-verification" content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM" />
+            <meta
+              name="google-site-verification"
+              content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM"
+            />
+            <meta name="googlebot" content="noindex" />
+            <meta name="robots" content="noindex" />
           </Helmet>
           <main>{children}</main>
         </div>
@@ -39,7 +44,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
