@@ -62,10 +62,10 @@ body {
   &__item {
     max-width: calc(65vw / 3);
     @media only screen and (max-width: 768px) {
-      width: calc(50% - 10px);
+      width: calc(100%);
       max-width: none;
       display: inline-block;
-      margin: 10px 5px 0px 5px;
+      margin: 10px 0px 0px 0px;
     }
     &-video {
       margin: 0 20px 0px 0;
@@ -75,10 +75,10 @@ body {
       align-items: flex-start;
       @media only screen and (max-width: 768px) {
         // max-width: calc(72vw);
-        max-width: calc(50% - 10px);
+        max-width: calc(100%);
         height: auto;
         display: inline-block;
-        margin: 10px 5px 0px 5px;
+        margin: 10px 0px 0px 0px;
         vertical-align: top;
       }
     }
