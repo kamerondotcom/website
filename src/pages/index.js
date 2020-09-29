@@ -21,7 +21,7 @@ const IndexPage = () => (
         <ul>
           <li className={styles.project}>
             <h2>Director, Digital Experience and Development</h2>
-            <h3>Digital Pride Fest & Digital Drag Fest, PEG</h3>
+            <h3>Digital PrideFest & Digital DragFest, PEG</h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - Summer 2020
             </div>
