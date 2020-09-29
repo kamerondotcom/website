@@ -52,6 +52,7 @@ body {
     display: block;
   }
   a {
+    border: none;
     &:last-of-type {
       .project-thumbs__item {
         margin-right: 0;
