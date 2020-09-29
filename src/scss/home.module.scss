@@ -68,10 +68,13 @@ body {
   // padding: 40px 0 50px 0;
 
   &__main {
-    padding: 40px 20px 80px 20px;
+    padding: 40px 0px 80px 0px;
+    margin: 0 20px;
+    overflow: hidden;
 
     @media only screen and (max-width: 768px) {
-      padding: 0 20px;
+      padding: 0 0px;
+      margin: 0 20px;
     }
     //   padding: 40px;
     //   // overflow: hidden;
@@ -102,11 +105,17 @@ body {
       @media only screen and (max-width: 768px) {
         font-size: 4rem;
       }
+      @media only screen and (max-width: 568px) {
+        font-size: 3rem;
+      }
     }
     h2 {
       font-size: 2rem;
       @media only screen and (max-width: 768px) {
         font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 568px) {
+        font-size: 1.3rem;
       }
       text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
       animation-name: animateShadow;
