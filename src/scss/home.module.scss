@@ -88,7 +88,10 @@ body {
 }
 @function makelongshadow($color, $color2, $color3, $color4, $color5) {
   $val: 0px 0px $color;
-  @for $i from 1 through 10 {
+  @for $i from 1 through 1 {
+    $val: #{$val}, 1px -1px #666;
+  }
+  @for $i from 2 through 10 {
     $val: #{$val}, -#{$i}px #{$i}px #{$color};
   }
   @for $i from 11 through 20 {
