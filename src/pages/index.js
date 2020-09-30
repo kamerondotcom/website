@@ -103,7 +103,7 @@ const IndexPage = () => (
             </div>
           </li>
           <li className={styles.project}>
-            <h2>Partner / CTO</h2>
+            <h2>Partner & CTO</h2>
             <h3>Let's Build / Let's Stream</h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - 2012 - 2020
