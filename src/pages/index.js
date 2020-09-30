@@ -59,7 +59,7 @@ const IndexPage = () => (
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
             <div className={styles.projectDate}>
-              Los Angeles, CA / New York, NY — 2019 - Present
+              Los Angeles, CA / New York, NY — 2019 - August 2020
             </div>
             <p>
               Led small team of engineers to relaunch their flagship brand
