@@ -33,8 +33,16 @@ const Layout = ({ children }) => (
               name="google-site-verification"
               content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM"
             />
-            <meta name="googlebot" content="noindex" />
-            <meta name="robots" content="noindex" />
+            <meta property="og:title" content="Kameron Zach Portfolio" />
+            <meta
+              property="og:description"
+              content="Kameron Zach Digital Portfolio"
+            />
+            <meta
+              property="og:image"
+              content="https://www.kameronzach.com/images/social.jpg"
+            />
+            <meta property="og:url" content="https://www.kameronzach.com" />
           </Helmet>
           <main>{children}</main>
         </div>
