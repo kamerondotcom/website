@@ -41,15 +41,33 @@ const IndexPage = () => (
               , React, Redis, Mongo, Figma and Express.
             </p>
             <div className={styles.projectThumbs}>
-              <video className={styles.projectThumbs__item} autoPlay muted loop>
+              <video
+                alt="Digital PrideFest"
+                className={styles.projectThumbs__item}
+                autoPlay
+                muted
+                loop
+              >
                 <source src="/video/pride-fest-1.sameformat.mp4" />
               </video>
 
-              <video className={styles.projectThumbs__item} autoPlay muted loop>
+              <video
+                alt="Digital PrideFest"
+                className={styles.projectThumbs__item}
+                autoPlay
+                muted
+                loop
+              >
                 <source src="/video/pride-fest-2.sameformat.mp4" />
               </video>
 
-              <video className={styles.projectThumbs__item} autoPlay muted loop>
+              <video
+                alt="Digital PrideFest"
+                className={styles.projectThumbs__item}
+                autoPlay
+                muted
+                loop
+              >
                 <source src="/video/pride-fest-3.mp4" />
               </video>
             </div>
@@ -72,6 +90,7 @@ const IndexPage = () => (
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.equinox.com">
                 <video
+                  alt="Equinox"
                   className={styles.projectThumbs__item}
                   autoPlay
                   muted
@@ -82,6 +101,7 @@ const IndexPage = () => (
               </a>
               <a target="_blank" ti href="https://www.equinox.com">
                 <video
+                  alt="Equinox"
                   className={styles.projectThumbs__item}
                   autoPlay
                   muted
@@ -92,6 +112,7 @@ const IndexPage = () => (
               </a>
               <a target="_blank" href="https://www.equinox.com">
                 <video
+                  alt="Equinox"
                   className={styles.projectThumbs__item}
                   autoPlay
                   muted
@@ -141,7 +162,6 @@ const IndexPage = () => (
                 />
               </a>
               <video
-                title="Route Calculator Hyperloop One"
                 alt="Route Calculator Hyperloop One"
                 className={styles.projectThumbs__itemVideo}
                 autoPlay
@@ -162,24 +182,28 @@ const IndexPage = () => (
               </video>
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
+                  alt="My Friends Place Website"
                   className={styles.projectThumbs__item}
                   src="/images/myfriendsplace.png"
                 />
               </a>
               <a target="_blank" href="https://www.trixiecosmetics.com">
                 <img
+                  alt="Trixie Cosmetics"
                   className={styles.projectThumbs__item}
                   src="/images/trixie-cosmetics.png"
                 />
               </a>
               <a target="_blank" href="https://www.katharinekidd.com">
                 <img
+                  alt="Katharine Kidd Website"
                   className={styles.projectThumbs__item}
                   src="/images/katharine-kidd.png"
                 />
               </a>
               <a target="_blank" href="https://www.trixieandkatya.com">
                 <img
+                  alt="Trixie and Katya Tour Website"
                   className={styles.projectThumbs__item}
                   src="/images/trixie-katya.png"
                 />
