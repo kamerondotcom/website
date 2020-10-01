@@ -1,4 +1,7 @@
-import React from "react";
+import React, { createRef, useState } from "react";
+import { isMobile } from "react-device-detect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
@@ -41,35 +44,18 @@ const IndexPage = () => (
               , React, Redis, Mongo, Figma and Express.
             </p>
             <div className={styles.projectThumbs}>
-              <video
+              <VideoPlayer
                 alt="Digital PrideFest"
-                className={styles.projectThumbs__item}
-                autoPlay
-                muted
-                loop
-              >
-                <source src="/video/pride-fest-1.sameformat.mp4" />
-              </video>
-
-              <video
+                src="/video/pride-fest-1.sameformat.mp4"
+              />
+              <VideoPlayer
                 alt="Digital PrideFest"
-                className={styles.projectThumbs__item}
-                autoPlay
-                muted
-                loop
-              >
-                <source src="/video/pride-fest-2.sameformat.mp4" />
-              </video>
-
-              <video
+                src="/video/pride-fest-2.sameformat.mp4"
+              />
+              <VideoPlayer
                 alt="Digital PrideFest"
-                className={styles.projectThumbs__item}
-                autoPlay
-                muted
-                loop
-              >
-                <source src="/video/pride-fest-3.mp4" />
-              </video>
+                src="/video/pride-fest-3.mp4"
+              />
             </div>
           </li>
 
@@ -80,46 +66,39 @@ const IndexPage = () => (
               Los Angeles, CA / New York, NY — 2019 - August 2020
             </div>
             <p>
-              Led small team of engineers to relaunch their flagship brand
-              website (equinox.com) on a completely new technology (Next.js,
-              React) stack and CMS (Contentful). Worked with team to break up
-              intricate design systems (from Work & Co), animations with the
-              goal to balance aesthetic presentation, usability, conversion and
-              performance.
+              Transitioned from an agency / client relationship to an internal
+              consultant to help Equinox relaunch their flagship brand website
+              (equinox.com) on a completely new technology (React, Next) stack
+              and CMS (Contentful). Worked with team to break up intricate
+              design systems (from Work & Co) and animations with the goal to
+              balance aesthetic presentation, usability and performance.
+              Established and implemented development style / structure
+              standards that made modules and interface elements more flexible
+              and re-usable.
+            </p>
+            <p>
+              Recently led team to pivot sales previously sales / lead
+              generation motivated Equinox.com to an editorial destination for
+              members during COVID-19 gym closures.
             </p>
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.equinox.com">
-                <video
+                <VideoPlayer
                   alt="Equinox"
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-3.sameformat.mp4" />
-                </video>
+                  src="/video/equinox-3.sameformat.mp4"
+                />
               </a>
               <a target="_blank" ti href="https://www.equinox.com">
-                <video
+                <VideoPlayer
                   alt="Equinox"
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-1a.sameformat.mp4" />
-                </video>
+                  src="/video/equinox-1a.sameformat.mp4"
+                />
               </a>
               <a target="_blank" href="https://www.equinox.com">
-                <video
+                <VideoPlayer
                   alt="Equinox"
-                  className={styles.projectThumbs__item}
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/video/equinox-2.sameformat.mp4" />
-                </video>
+                  src="/video/equinox-2.sameformat.mp4"
+                />
               </a>
             </div>
           </li>
@@ -161,25 +140,14 @@ const IndexPage = () => (
                   src="/images/inc-cap.png"
                 />
               </a>
-              <video
+              <VideoPlayer
                 alt="Route Calculator Hyperloop One"
-                className={styles.projectThumbs__itemVideo}
-                autoPlay
-                muted
-                loop
-              >
-                <source src="/video/routes.mp4" />
-              </video>
-              <video
-                title="Simulator Hyperloop One"
+                src="/video/routes.mp4"
+              />
+              <VideoPlayer
                 alt="Simulator Hyperloop One"
-                className={styles.projectThumbs__itemVideo}
-                autoPlay
-                muted
-                loop
-              >
-                <source src="/video/simulator.mp4" />
-              </video>
+                src="/video/simulator.mp4"
+              />
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   alt="My Friends Place Website"
@@ -258,5 +226,33 @@ const IndexPage = () => (
     </div>
   </Layout>
 );
+
+const VideoPlayer = ({ alt, src }) => {
+  const player = createRef();
+  const [playing, setPlaying] = useState(isMobile === false);
+  const playingSingleton = playing ? { autoPlay: true } : {};
+  return (
+    <span className={styles.videoWrap}>
+      {/* <button
+        onClick={() => {
+          setPlaying(true);
+          player.current.play();
+        }}
+      >
+        <FontAwesomeIcon icon={faPlay} />
+      </button> */}
+      <video
+        ref={player}
+        alt={alt}
+        className={styles.projectThumbs__itemVideo}
+        {...playingSingleton}
+        muted
+        loop
+      >
+        <source type="video/mp4" src={src} />
+      </video>
+    </span>
+  );
+};
 
 export default IndexPage;

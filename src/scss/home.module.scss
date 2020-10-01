@@ -45,6 +45,25 @@ body {
     right: auto;
   }
 }
+
+.video-wrap {
+  position: relative;
+  margin-right: 20px;
+  &:last-of-type {
+    video {
+      margin-right: 0;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background-color: $color4;
+    border: 0;
+    color: white;
+    padding: 8px 14px;
+  }
+}
 .project-thumbs {
   margin: 20px 0 0 0;
   display: flex;
@@ -60,6 +79,12 @@ body {
       .project-thumbs__item {
         margin-right: 0;
       }
+      .video-wrap {
+        margin-right: 0;
+        video {
+          margin-right: 0;
+        }
+      }
     }
   }
   &__item {
@@ -74,11 +99,14 @@ body {
       margin: 20px 0px 0px 0px;
     }
     &-video {
-      margin: 0 20px 0px 0;
+      margin: 0;
       max-width: calc(72vw / 3);
       height: auto;
       // object-fit: cover;
       align-items: flex-start;
+      // &-wrap {
+      //   margin: 0 20px 0 0;
+      // }
       @media only screen and (max-width: 1100px) {
         max-width: calc(90vw / 3);
       }
