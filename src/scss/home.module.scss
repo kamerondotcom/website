@@ -75,14 +75,16 @@ body {
   }
   a {
     border: none;
+    margin-right: 20px;
     &:last-of-type {
+      margin-right: 0;
       .project-thumbs__item {
         margin-right: 0;
       }
       .video-wrap {
         margin-right: 0;
         video {
-          margin-right: 0;
+          // margin-right: 0;
         }
       }
     }
