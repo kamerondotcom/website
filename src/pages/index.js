@@ -111,10 +111,10 @@ const IndexPage = () => (
             <p>
               Managed a small team to design and build digital experiences and
               business solutions for clients like Equinox, HBO, Dermalogica,
-              Virgin Hyperloop One, Jeremy Scott, Carolina Herrera and other
-              entertainment clients. Led team in developing technical solution,
-              pitch and build Javascript apps / integrations to full websites
-              and native apps.
+              Virgin Hyperloop-One, Jeremy Scott, Rolling Stone and other
+              entertainment/editorial clients. Led team in developing technical
+              solutions, pitch and build custom Javascript apps/integrations to
+              full websites, custom workflows and native apps.
             </p>
             <p>
               Let’s Stream is a custom video streaming platform for business,
@@ -131,7 +131,7 @@ const IndexPage = () => (
               <a target="_blank" href="https://www.gatsbyjs.com/">
                 Gatsby
               </a>{" "}
-              and Sketch
+              THREE.js, Pixi and Sketch
             </p>
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.inc-cap.com">
