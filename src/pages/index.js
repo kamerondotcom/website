@@ -146,6 +146,12 @@ const IndexPage = () => (
                   src="/video/leap-second.mp4"
                 />
               </a>
+              <a target="_blank" href="https://confirmationhbo.com">
+                <VideoPlayer
+                  alt="Confirmation | HBO"
+                  src="/video/confirmation.mp4"
+                />
+              </a>
               <VideoPlayer
                 alt="Route Calculator Hyperloop One"
                 src="/video/routes.mp4"
