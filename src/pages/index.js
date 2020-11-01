@@ -140,6 +140,12 @@ const IndexPage = () => (
                   src="/images/inc-cap.png"
                 />
               </a>
+              <a target="_blank" href="http://spendyourleapsecondhere.com/">
+                <VideoPlayer
+                  alt="Leap Second | Last Week Tonight with John Oliver"
+                  src="/video/leap-second.mp4"
+                />
+              </a>
               <VideoPlayer
                 alt="Route Calculator Hyperloop One"
                 src="/video/routes.mp4"
