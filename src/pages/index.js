@@ -37,11 +37,12 @@ const IndexPage = () => (
               others.
             </p>
             <p>
-              Technologies included:{" "}
+              Technologies included: React + Redux JS/Native, Node.js, Express,
+              Serverless, Gatsby (GraphQL),{" "}
               <a target="_blank" href="https://nextjs.org/">
                 Next.js
               </a>
-              , React, Redis, Mongo, Figma and Express.
+              , Python, AWS (S3, Lambda, EC2, API Gateway, RDS) and Cypress.
             </p>
             <div className={styles.projectThumbs}>
               <VideoPlayer
