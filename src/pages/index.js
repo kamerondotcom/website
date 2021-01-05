@@ -118,10 +118,13 @@ const IndexPage = () => (
               full websites, custom workflows and native apps.
             </p>
             <p>
-              Let’s Stream is a custom video streaming platform for business,
-              built using Node.js and React. The platform allows business to
-              capture and broadcast secure, scalable live streams that can be
-              customized based on the required use case.
+              Let’s Stream is a custom ulta low latency video streaming platform
+              for business, built using Node.js and React. The platform allows
+              business to capture and broadcast secure, scalable live streams
+              where the audience can interact and participate on camera in a
+              zoom-like experience. The platform can be used for webinars and
+              digital events with custom tools like interactive auctions,
+              trivia, bingo and more.
             </p>
             <p>
               Agency Highlights: client retention rate of 68%, winner of 3 site
@@ -135,18 +138,10 @@ const IndexPage = () => (
               THREE.js, Pixi and Sketch
             </p>
             <div className={styles.projectThumbs}>
-              <a target="_blank" href="https://www.inc-cap.com">
-                <img
-                  className={styles.projectThumbs__item}
-                  src="/images/inc-cap.png"
-                />
-              </a>
-              <a target="_blank" href="http://spendyourleapsecondhere.com/">
-                <VideoPlayer
-                  alt="Leap Second | Last Week Tonight with John Oliver"
-                  src="/video/leap-second.mp4"
-                />
-              </a>
+              <VideoPlayer
+                alt="RuPaul's Drag Race Season 13 Premiere Fan Event"
+                src="/video/rpdr.mp4"
+              />
               <a target="_blank" href="https://confirmationhbo.com">
                 <VideoPlayer
                   alt="Confirmation | HBO"
@@ -154,13 +149,25 @@ const IndexPage = () => (
                 />
               </a>
               <VideoPlayer
-                alt="Route Calculator Hyperloop One"
-                src="/video/routes.mp4"
-              />
-              <VideoPlayer
                 alt="Simulator Hyperloop One"
                 src="/video/simulator.mp4"
               />
+              <VideoPlayer
+                alt="Route Calculator Hyperloop One"
+                src="/video/routes.mp4"
+              />
+              <a target="_blank" href="http://spendyourleapsecondhere.com">
+                <VideoPlayer
+                  alt="Leap Second | Last Week Tonight with John Oliver"
+                  src="/video/leap-second.mp4"
+                />
+              </a>
+              <a target="_blank" href="https://www.inc-cap.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/inc-cap.png"
+                />
+              </a>
               <a target="_blank" href="https://www.myfriendsplace.org">
                 <img
                   alt="My Friends Place Website"
