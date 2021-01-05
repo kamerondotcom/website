@@ -23,6 +23,101 @@ const IndexPage = () => (
       <div className={styles.home__works}>
         <ul>
           <li className={styles.project}>
+            <h2>Partner</h2>
+            <h3>Let's Build / Let's Stream</h3>
+            <div className={styles.projectDate}>
+              Los Angeles, CA - 2012 - 2020
+            </div>
+            <p>
+              Managed a small team to design and build digital experiences and
+              business solutions for clients like Equinox, HBO, Dermalogica,
+              Virgin Hyperloop-One, Jeremy Scott, Rolling Stone and other
+              entertainment/editorial clients. Led team in developing technical
+              solutions, pitch and build custom Javascript apps/integrations to
+              full websites, custom workflows and native apps.
+            </p>
+            <p>
+              Let’s Stream is a custom ulta low latency video streaming platform
+              for business, built using Node.js and React. The platform allows
+              business to capture and broadcast secure, scalable live streams
+              where the audience can interact and participate on camera in a
+              zoom-like experience. The platform can be used for webinars and
+              digital events with custom tools like interactive auctions,
+              trivia, bingo and more.
+            </p>
+            <p>
+              Agency Highlights: client retention rate of 68%, winner of 3 site
+              of the days awards from AWWWARDS, nominated for a Digital Emmy.
+            </p>
+            <p>
+              Technologies included: React JS/Native, Express,{" "}
+              <a target="_blank" href="https://www.gatsbyjs.com/">
+                Gatsby
+              </a>{" "}
+              THREE.js, Pixi and Sketch
+            </p>
+            <div className={styles.projectThumbs}>
+              <VideoPlayer
+                alt="RuPaul's Drag Race Season 13 Premiere Fan Event"
+                src="/video/rpdr.mp4"
+              />
+              <a target="_blank" href="https://www.myfriendsplace.org">
+                <img
+                  alt="My Friends Place Website"
+                  className={styles.projectThumbs__item}
+                  src="/images/myfriendsplace.png"
+                />
+              </a>
+              <a target="_blank" href="https://confirmationhbo.com">
+                <VideoPlayer
+                  alt="Confirmation | HBO"
+                  src="/video/confirmation.mp4"
+                />
+              </a>
+              <a target="_blank" href="https://www.katharinekidd.com">
+                <img
+                  alt="Katharine Kidd Website"
+                  className={styles.projectThumbs__item}
+                  src="/images/katharine-kidd.png"
+                />
+              </a>
+              <VideoPlayer
+                alt="Simulator Hyperloop One"
+                src="/video/simulator.mp4"
+              />
+              <VideoPlayer
+                alt="Route Calculator Hyperloop One"
+                src="/video/routes.mp4"
+              />
+              <a target="_blank" href="http://spendyourleapsecondhere.com">
+                <VideoPlayer
+                  alt="Leap Second | Last Week Tonight with John Oliver"
+                  src="/video/leap-second.mp4"
+                />
+              </a>
+              <a target="_blank" href="https://www.inc-cap.com">
+                <img
+                  className={styles.projectThumbs__item}
+                  src="/images/inc-cap.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.trixiecosmetics.com">
+                <img
+                  alt="Trixie Cosmetics"
+                  className={styles.projectThumbs__item}
+                  src="/images/trixie-cosmetics.png"
+                />
+              </a>
+              <a target="_blank" href="https://www.trixieandkatya.com">
+                <img
+                  alt="Trixie and Katya Tour Website"
+                  className={styles.projectThumbs__item}
+                  src="/images/trixie-katya.png"
+                />
+              </a>
+            </div>
+          </li>
+          <li className={styles.project}>
             <h2>Director, Digital Experience and Development</h2>
             <h3>Digital PrideFest & Digital DragFest, PEG</h3>
             <div className={styles.projectDate}>
@@ -59,7 +154,6 @@ const IndexPage = () => (
               />
             </div>
           </li>
-
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
@@ -99,101 +193,6 @@ const IndexPage = () => (
                 <VideoPlayer
                   alt="Equinox"
                   src="/video/equinox-2.sameformat.mp4"
-                />
-              </a>
-            </div>
-          </li>
-          <li className={styles.project}>
-            <h2>Partner & CTO</h2>
-            <h3>Let's Build / Let's Stream</h3>
-            <div className={styles.projectDate}>
-              Los Angeles, CA - 2012 - 2020
-            </div>
-            <p>
-              Managed a small team to design and build digital experiences and
-              business solutions for clients like Equinox, HBO, Dermalogica,
-              Virgin Hyperloop-One, Jeremy Scott, Rolling Stone and other
-              entertainment/editorial clients. Led team in developing technical
-              solutions, pitch and build custom Javascript apps/integrations to
-              full websites, custom workflows and native apps.
-            </p>
-            <p>
-              Let’s Stream is a custom ulta low latency video streaming platform
-              for business, built using Node.js and React. The platform allows
-              business to capture and broadcast secure, scalable live streams
-              where the audience can interact and participate on camera in a
-              zoom-like experience. The platform can be used for webinars and
-              digital events with custom tools like interactive auctions,
-              trivia, bingo and more.
-            </p>
-            <p>
-              Agency Highlights: client retention rate of 68%, winner of 3 site
-              of the days awards from AWWWARDS, nominated for a Digital Emmy.
-            </p>
-            <p>
-              Technologies included: React JS/Native, Express,{" "}
-              <a target="_blank" href="https://www.gatsbyjs.com/">
-                Gatsby
-              </a>{" "}
-              THREE.js, Pixi and Sketch
-            </p>
-            <div className={styles.projectThumbs}>
-              <VideoPlayer
-                alt="RuPaul's Drag Race Season 13 Premiere Fan Event"
-                src="/video/rpdr.mp4"
-              />
-              <a target="_blank" href="https://confirmationhbo.com">
-                <VideoPlayer
-                  alt="Confirmation | HBO"
-                  src="/video/confirmation.mp4"
-                />
-              </a>
-              <VideoPlayer
-                alt="Simulator Hyperloop One"
-                src="/video/simulator.mp4"
-              />
-              <VideoPlayer
-                alt="Route Calculator Hyperloop One"
-                src="/video/routes.mp4"
-              />
-              <a target="_blank" href="http://spendyourleapsecondhere.com">
-                <VideoPlayer
-                  alt="Leap Second | Last Week Tonight with John Oliver"
-                  src="/video/leap-second.mp4"
-                />
-              </a>
-              <a target="_blank" href="https://www.inc-cap.com">
-                <img
-                  className={styles.projectThumbs__item}
-                  src="/images/inc-cap.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.myfriendsplace.org">
-                <img
-                  alt="My Friends Place Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/myfriendsplace.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.trixiecosmetics.com">
-                <img
-                  alt="Trixie Cosmetics"
-                  className={styles.projectThumbs__item}
-                  src="/images/trixie-cosmetics.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.katharinekidd.com">
-                <img
-                  alt="Katharine Kidd Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/katharine-kidd.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.trixieandkatya.com">
-                <img
-                  alt="Trixie and Katya Tour Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/trixie-katya.png"
                 />
               </a>
             </div>
