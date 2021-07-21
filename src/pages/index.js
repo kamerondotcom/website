@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
-import styles from "./../scss/home.module.scss";
+import * as styles from "./../scss/home.module.scss";
 
 const IndexPage = () => (
   <Layout>
@@ -46,6 +46,18 @@ const IndexPage = () => (
                   src="/images/myfriendsplace.png"
                 />
               </a>
+              <VideoPlayer
+                alt="Digital PrideFest"
+                src="/video/pride-fest-1.sameformat.mp4"
+              />
+              <VideoPlayer
+                alt="Digital PrideFest"
+                src="/video/pride-fest-2.sameformat.mp4"
+              />
+              <VideoPlayer
+                alt="Digital PrideFest"
+                src="/video/pride-fest-3.mp4"
+              />
               <a target="_blank" href="https://confirmationhbo.com">
                 <VideoPlayer
                   alt="Confirmation | HBO"
