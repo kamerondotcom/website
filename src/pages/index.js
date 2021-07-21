@@ -28,33 +28,11 @@ const IndexPage = () => (
             <div className={styles.projectDate}>
               Los Angeles, CA - 2012 - 2020
             </div>
+            <p>I work with a small team of Engineers and Designers to build low latency branded live stream video tools for businesses. Our platform, built using Node.js and React, allows business to capture and broadcast secure, scalable live streams that can be customized based on the required use case.</p>
+            <p>Clients include Adobe, Viacom Velocity, Colgate, Ralph Lauren, HBO, Virgin Hyperloop One, Jeremy Scott, and other entertainment clients. Lead a small team in developing technical solution, pitch and producing projects through to launch and beyond.</p>
+            <p>Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js, Lamba / Serverless, Redis and AWS.</p>
             <p>
-              Managed a small team to design and build digital experiences and
-              business solutions for clients like Equinox, HBO, Dermalogica,
-              Virgin Hyperloop-One, Jeremy Scott, Rolling Stone and other
-              entertainment/editorial clients. Led team in developing technical
-              solutions, pitch and build custom Javascript apps/integrations to
-              full websites, custom workflows and native apps.
-            </p>
-            <p>
-              Let’s Stream is a custom ulta low latency video streaming platform
-              for business, built using Node.js and React. The platform allows
-              business to capture and broadcast secure, scalable live streams
-              where the audience can interact and participate on camera in a
-              zoom-like experience. The platform can be used for webinars and
-              digital events with custom tools like interactive auctions,
-              trivia, bingo and more.
-            </p>
-            <p>
-              Agency Highlights: client retention rate of 68%, winner of 3 site
-              of the days awards from AWWWARDS, nominated for a Digital Emmy.
-            </p>
-            <p>
-              Technologies included: React JS/Native, Express,{" "}
-              <a target="_blank" href="https://www.gatsbyjs.com/">
-                Gatsby
-              </a>{" "}
-              THREE.js, Pixi and Sketch
+              Technologies included: React JS, Next.js, THREE.js, Redis and Pixi.
             </p>
             <div className={styles.projectThumbs}>
               <VideoPlayer
@@ -117,7 +95,7 @@ const IndexPage = () => (
               </a>
             </div>
           </li>
-          <li className={styles.project}>
+          {/* <li className={styles.project}>
             <h2>Director, Digital Experience and Development</h2>
             <h3>Digital PrideFest & Digital DragFest, PEG</h3>
             <div className={styles.projectDate}>
@@ -153,7 +131,7 @@ const IndexPage = () => (
                 src="/video/pride-fest-3.mp4"
               />
             </div>
-          </li>
+          </li> */}
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
