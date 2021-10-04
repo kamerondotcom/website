@@ -18,7 +18,7 @@ $color5: #572d8c;
 
 body {
   // min-height: 100hv;
-  background: #edeee9;
+  background: #ffff;
   margin: 0;
 }
 
@@ -129,49 +129,7 @@ body {
     margin: 0 0 0 0;
   }
 }
-@function makelongshadow($color, $color2, $color3, $color4, $color5) {
-  $val: 0px 0px $color;
-  @for $i from 1 through 1 {
-    $val: #{$val}, 1px -1px #666;
-  }
-  @for $i from 2 through 10 {
-    $val: #{$val}, -#{$i}px #{$i}px #{$color};
-  }
-  @for $i from 11 through 20 {
-    $val: #{$val}, -#{$i}px #{$i}px #{$color2};
-  }
-  @for $i from 21 through 30 {
-    $val: #{$val}, -#{$i}px #{$i}px #{$color3};
-  }
-  @for $i from 31 through 40 {
-    $val: #{$val}, -#{$i}px #{$i}px #{$color4};
-  }
-  @for $i from 41 through 50 {
-    $val: #{$val}, -#{$i}px #{$i}px #{$color5};
-  }
-  @return $val;
-}
 
-@keyframes animateShadow {
-  0% {
-    text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
-  }
-  20% {
-    text-shadow: makelongshadow($color2, $color3, $color4, $color5, $color);
-  }
-  40% {
-    text-shadow: makelongshadow($color3, $color4, $color5, $color, $color2);
-  }
-  60% {
-    text-shadow: makelongshadow($color4, $color5, $color, $color2, $color3);
-  }
-  80% {
-    text-shadow: makelongshadow($color5, $color, $color2, $color3, $color4);
-  }
-  100% {
-    text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
-  }
-}
 
 .home {
   // min-height: 100vh;
@@ -197,7 +155,7 @@ body {
       padding: 0px 20px;
     }
     h1 {
-      font-size: 5rem;
+      font-size: 3.5rem;
       margin: 0;
       @media only screen and (max-width: 768px) {
         font-size: 4rem;
@@ -236,7 +194,7 @@ body {
       padding: 20px 20px 30px 20px;
     }
     h2 {
-      margin: 0;
+      margin: 0 0 5px 0;
       font-size: 1.6rem;
       @media only screen and (max-width: 500px) {
         font-size: 1.4rem;

@@ -18,7 +18,6 @@ const IndexPage = () => (
           Kameron Zach
           {/* <br /> */}
         </h1>
-        <h2>Technical Director, Experience Designer</h2>
       </div>
       <div className={styles.home__works}>
         <ul>
@@ -28,122 +27,28 @@ const IndexPage = () => (
             <div className={styles.projectDate}>
               Los Angeles, CA - 2012 - 2020
             </div>
-            <p>I work with a small team of Engineers and Designers to build low latency branded live stream video tools for businesses. Our platform, built using Node.js and React, allows business to capture and broadcast secure, scalable live streams that can be customized based on the required use case.</p>
-            <p>Clients include Adobe, Viacom Velocity, Colgate, Ralph Lauren, HBO, Virgin Hyperloop One, Jeremy Scott, and other entertainment clients. Lead a small team in developing technical solution, pitch and producing projects through to launch and beyond.</p>
-            <p>Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js, Lamba / Serverless, Redis and AWS.</p>
             <p>
-              Technologies included: React JS, Next.js, THREE.js, Redis and Pixi.
+              I work with a small team of Engineers and Designers to build low
+              latency branded live stream video tools for businesses. Our
+              platform, built using Node.js and React, allows business to
+              capture and broadcast secure, scalable live streams that can be
+              customized based on the required use case.
             </p>
-            <div className={styles.projectThumbs}>
-              <VideoPlayer
-                alt="RuPaul's Drag Race Season 13 Premiere Fan Event"
-                src="/video/rpdr.mp4"
-              />
-              <a target="_blank" href="https://www.myfriendsplace.org">
-                <img
-                  alt="My Friends Place Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/myfriendsplace.png"
-                />
-              </a>
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-1.sameformat.mp4"
-              />
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-2.sameformat.mp4"
-              />
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-3.mp4"
-              />
-              <a target="_blank" href="https://confirmationhbo.com">
-                <VideoPlayer
-                  alt="Confirmation | HBO"
-                  src="/video/confirmation.mp4"
-                />
-              </a>
-              <a target="_blank" href="https://www.katharinekidd.com">
-                <img
-                  alt="Katharine Kidd Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/katharine-kidd.png"
-                />
-              </a>
-              <VideoPlayer
-                alt="Simulator Hyperloop One"
-                src="/video/simulator.mp4"
-              />
-              <VideoPlayer
-                alt="Route Calculator Hyperloop One"
-                src="/video/routes.mp4"
-              />
-              <a target="_blank" href="http://spendyourleapsecondhere.com">
-                <VideoPlayer
-                  alt="Leap Second | Last Week Tonight with John Oliver"
-                  src="/video/leap-second.mp4"
-                />
-              </a>
-              <a target="_blank" href="https://www.inc-cap.com">
-                <img
-                  className={styles.projectThumbs__item}
-                  src="/images/inc-cap.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.trixiecosmetics.com">
-                <img
-                  alt="Trixie Cosmetics"
-                  className={styles.projectThumbs__item}
-                  src="/images/trixie-cosmetics.png"
-                />
-              </a>
-              <a target="_blank" href="https://www.trixieandkatya.com">
-                <img
-                  alt="Trixie and Katya Tour Website"
-                  className={styles.projectThumbs__item}
-                  src="/images/trixie-katya.png"
-                />
-              </a>
-            </div>
+            <p>
+              Clients include Adobe, Viacom Velocity, Colgate, Ralph Lauren,
+              HBO, Virgin Hyperloop One, Jeremy Scott, and other entertainment
+              clients. Lead a small team in developing technical solution, pitch
+              and producing projects through to launch and beyond.
+            </p>
+            <p>
+              Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js,
+              Lamba / Serverless, Redis and AWS.
+            </p>
+            <p>
+              Technologies included: React JS, Next.js, THREE.js, Redis and
+              Pixi.
+            </p>
           </li>
-          {/* <li className={styles.project}>
-            <h2>Director, Digital Experience and Development</h2>
-            <h3>Digital PrideFest & Digital DragFest, PEG</h3>
-            <div className={styles.projectDate}>
-              Los Angeles, CA - Summer 2020
-            </div>
-            <p>
-              Worked with a small creative team to design and brand Digital
-              PrideFest a digital streaming event featuring 70+ shows created by
-              LGTBQ artists and drag performers from around the world. Built
-              custom ticketing admin/reporting, live stream tools for artist
-              capture and broadcast using SaaS tools like Dolby.io and Mux among
-              others.
-            </p>
-            <p>
-              Technologies included: React + Redux JS/Native, Node.js, Express,
-              Serverless, Gatsby (GraphQL),{" "}
-              <a target="_blank" href="https://nextjs.org/">
-                Next.js
-              </a>
-              , Python, AWS (S3, Lambda, EC2, API Gateway, RDS) and Cypress.
-            </p>
-            <div className={styles.projectThumbs}>
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-1.sameformat.mp4"
-              />
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-2.sameformat.mp4"
-              />
-              <VideoPlayer
-                alt="Digital PrideFest"
-                src="/video/pride-fest-3.mp4"
-              />
-            </div>
-          </li> */}
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
@@ -195,7 +100,7 @@ const IndexPage = () => (
             </div>
             <p>
               Taught Javascript (ES6) and computer science basics to a group of
-              14-18 students during a 12- week evening program.
+              14-18 students during a 12-week evening program.
             </p>
           </li>
           <li className={styles.project}>
@@ -221,7 +126,7 @@ const IndexPage = () => (
             </p>
           </li>
           <li>
-            <h2>Bachelor of Arts - Video/Film Production</h2>
+            <h2>Bachelor of Arts - Video / Film Production</h2>
             <h3>Webster University, Saint Louis Missouri</h3>
           </li>
         </ul>

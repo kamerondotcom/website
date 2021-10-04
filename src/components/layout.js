@@ -29,6 +29,7 @@ const Layout = ({ children }) => (
           <Helmet>
             <script src="/js/pace.js" />
             <link href="/css/pace-theme.css" rel="stylesheet" />
+            <link href="/css/fonts.css" rel="stylesheet" />
             <meta
               name="google-site-verification"
               content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM"
