@@ -23,7 +23,7 @@ const IndexPage = () => (
         <ul>
           <li className={styles.project}>
             <h2>Partner</h2>
-            <h3>Let's Build / Let's Stream</h3>
+            <h3>Let&apos;s Build</h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - 2012 - 2020
             </div>
@@ -53,7 +53,7 @@ const IndexPage = () => (
             <h2>Senior Engineer</h2>
             <h3>Equinox</h3>
             <div className={styles.projectDate}>
-              Los Angeles, CA / New York, NY — 2019 - August 2020
+              New York, NY — 2019 - August 2020
             </div>
             <p>
               Transitioned from an agency / client relationship to an internal
@@ -147,14 +147,6 @@ const VideoPlayer = ({ alt, src }) => {
   const playingSingleton = playing ? { autoPlay: true } : {};
   return (
     <span className={styles.videoWrap}>
-      {/* <button
-        onClick={() => {
-          setPlaying(true);
-          player.current.play();
-        }}
-      >
-        <FontAwesomeIcon icon={faPlay} />
-      </button> */}
       <video
         ref={player}
         alt={alt}
