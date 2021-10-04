@@ -35,10 +35,10 @@ const IndexPage = () => (
               customized based on the required use case.
             </p>
             <p>
-              Clients include Adobe, Viacom Velocity, Colgate, Ralph Lauren,
-              HBO, Virgin Hyperloop One, Jeremy Scott, and other entertainment
-              clients. Lead a small team in developing technical solution, pitch
-              and producing projects through to launch and beyond.
+              Clients include Adobe, Colgate, Ralph Lauren, HBO, Virgin
+              Hyperloop One, Jeremy Scott, and other entertainment clients. Lead
+              a small team in developing technical solution, pitch and producing
+              projects through to launch and beyond.
             </p>
             <p>
               Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js,
@@ -105,19 +105,30 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Associate Producer</h2>
-            <h3>MTV Networks</h3>
+            <h3>The X Factor USA (Sony Music / Tiny Horse)</h3>
+            <div className={styles.projectDate}>
+              Los Angeles, CA - 2011 - 2012
+            </div>
+            <p>
+              Multimedia producer for Seasons 1 & 2. Worked with producers and
+              editors to create supplemental digital content for the series.
+            </p>
+          </li>
+          <li className={styles.project}>
+            <h2>Associate Producer</h2>
+            <h3>MTV Networks / Viacom</h3>
             <div className={styles.projectDate}>
               New York, NY - September 2009 - April 2012
             </div>
             <p>
-              Multimedia / backpack producer for MTV brands like MTV News, Logo
-              and VH1. Shot, edited and produced on air, online and integrated
-              marketing video projects.
+              Multimedia / backpack producer for Viacom brands like MTV News,
+              Logo and VH1 News. Shot, edited and produced on air, online and
+              integrated marketing video projects.
             </p>
           </li>
           <li className={styles.project}>
             <h2>Summer Associate</h2>
-            <h3>MTV Networks</h3>
+            <h3>MTV Networks / Viacom</h3>
             <div className={styles.projectDate}>New York, NY - Summer 2009</div>
             <p>
               Participated in highly competitive 12-week post college work
