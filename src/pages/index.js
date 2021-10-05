@@ -25,7 +25,7 @@ const IndexPage = () => (
             <h2>Partner</h2>
             <h3>Let&apos;s Build</h3>
             <div className={styles.projectDate}>
-              Los Angeles, CA - 2012 - 2020
+              Los Angeles, CA - 2012 - Current
             </div>
             <p>
               I work with a small team of Engineers and Designers creating
@@ -51,7 +51,15 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
-            <h3>Equinox</h3>
+            <h3>
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.equinox.com"
+              >
+                Equinox
+              </a>
+            </h3>
             <div className={styles.projectDate}>
               New York, NY — 2019 - August 2020
             </div>
@@ -94,7 +102,15 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Javascript Course Instructor</h2>
-            <h3>General Assembly</h3>
+            <h3>
+              <a
+                target="_blank"
+                className="other"
+                href="https://generalassemb.ly/"
+              >
+                General Assembly
+              </a>
+            </h3>
             <div className={styles.projectDate}>
               Santa Monica, CA - 2014 - 2016
             </div>
@@ -138,7 +154,7 @@ const IndexPage = () => (
           </li>
           <li>
             <h2>Bachelor of Arts - Video / Film Production</h2>
-            <h3>Webster University, Saint Louis Missouri</h3>
+            <h3>Webster University, St. Louis Missouri</h3>
           </li>
         </ul>
       </div>

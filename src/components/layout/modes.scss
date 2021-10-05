@@ -9,6 +9,10 @@
     }
 }
 
+.other {
+    border-bottom: none !important;
+}
+
 .react-switch-bg {
     
     > div {
@@ -33,6 +37,11 @@
     background-color: white;
     color: black;
     transition: all 500ms ease-in-out;
+    .other {
+        &:hover {
+            border-bottom: 1px solid black !important;
+        }
+    }
     a {
         border-bottom: 1px solid black;
     }
@@ -49,7 +58,13 @@
         }
 
     }
+    .other {
+        &:hover {
+            border-bottom: 1px solid white !important;
+        }
+    }
     a {
         border-bottom: 1px solid white;
     }
 }
+
