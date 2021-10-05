@@ -144,8 +144,8 @@ const IndexPage = () => (
       </div>
       <div className={styles.contact}>
         <h3>
-          Get in touch,{" "}
-          <a href="mailto:kamerondotcom@mac.com">kamerondotcom@mac.com</a>
+          Get in touch:{" "}
+          <a href="mailto:contact@kameron.work">contact@kameron.work</a>
         </h3>
       </div>
     </div>
