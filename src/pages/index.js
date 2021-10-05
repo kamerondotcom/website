@@ -182,7 +182,16 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Associate Producer</h2>
-            <h3>MTV Networks / Viacom</h3>
+            <h3>
+              MTV Networks /{" "}
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.viacomcbs.com/"
+              >
+                Viacom
+              </a>
+            </h3>
             <div className={styles.projectDate}>
               New York, NY - September 2009 - April 2012
             </div>
@@ -195,12 +204,12 @@ const IndexPage = () => (
           <li className={styles.project}>
             <h2>Summer Associate</h2>
             <h3>MTV Networks / Viacom</h3>
-            <div className={styles.projectDate}>New York, NY - Summer 2009</div>
-            <p>
+            <div className={styles.projectDate}>New York, NY</div>
+            {/* <p>
               Participated in highly competitive 12-week post college work
               training program with MTV Networks where I worked hands-on
               designing features and UX for MTV’s then social web product: Flux.
-            </p>
+            </p> */}
           </li>
           <li>
             <h2>Bachelor of Arts - Video / Film Production</h2>
