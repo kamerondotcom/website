@@ -18,10 +18,8 @@ import styles from "./modes.scss";
 import "./layout.scss";
 
 const Layout = ({ children }) => {
-  const {
-    state: { isLight },
-    dispatch,
-  } = useModeState();
+  const { state = {}, dispatch } = useModeState();
+  const { isLight = true } = state;
   const toggleLightDark = () => {
     dispatch({ type: "TOGGLE_MODE" });
   };
