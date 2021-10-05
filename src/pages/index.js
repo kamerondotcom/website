@@ -43,12 +43,8 @@ const IndexPage = () => (
               and producing projects through to launch and beyond.
             </p>
             <p>
-              Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js,
-              Lamba / Serverless, Redis and AWS.
-            </p>
-            <p>
-              Technologies included: React JS, Next.js, THREE.js, Redis and
-              Pixi.
+              Technologies used: Javascript, Go, React + Redux, Serverless,
+              THREE.js, Redis.
             </p>
             <div className={styles.projectThumbs}>
               <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
@@ -65,6 +61,15 @@ const IndexPage = () => (
                 alt="Virgin Hyperloop One Route Simulator"
                 src="/video/routes.mp4"
               />
+              <a target="_blank" href="https://confirmationhbo.com/">
+                <VideoPlayer
+                  alt="HBO Microsites"
+                  src="/video/confirmation-hbo.mp4"
+                />
+              </a>
+              <a target="_blank" href="http://www.spendyourleapsecondhere.com/">
+                <VideoPlayer alt="HBO Microsites" src="/video/lwt.mp4" />
+              </a>
               <VideoPlayer
                 alt="Equinox Microsites"
                 src="/video/equinox-lb-1.mp4"

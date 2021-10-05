@@ -55,7 +55,7 @@ body {
 
 .video-wrap {
   position: relative;
-  margin-right: 10px;
+  margin-right: 15px;
   &:last-of-type {
     video {
       margin-right: 0;
@@ -82,12 +82,13 @@ body {
   }
   a {
     border: none;
-    margin-right: 10px;
+    margin-right: 15px;
+    
     .video-wrap {
       margin-right: 0 !important;
     }
-    &:last-of-type {
-      margin-right: 0;
+    &:last-child {
+      // margin-right: 0;
       .project-thumbs__item {
         margin-right: 0;
       }
