@@ -85,7 +85,7 @@ const IndexPage = () => (
               </a>
             </h3>
             <div className={styles.projectDate}>
-              New York, NY — 2019 - August 2020
+              New York, NY — April 2019 - August 2020
             </div>
             <p>
               Transitioned from an agency / client relationship to an internal
@@ -100,8 +100,16 @@ const IndexPage = () => (
             </p>
             <p>
               Recently led team to pivot sales previously sales / lead
-              generation motivated Equinox.com to an editorial destination for
-              members during COVID-19 gym closures.
+              generation motivated{" "}
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.equinox.com"
+              >
+                Equinox.com
+              </a>{" "}
+              to an editorial destination for members during COVID-19 gym
+              closures.
             </p>
             <div className={styles.projectThumbs}>
               <a target="_blank" href="https://www.equinox.com">
