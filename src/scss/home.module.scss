@@ -156,6 +156,7 @@ body {
     }
     h1 {
       font-size: 3.5rem;
+      font-weight: 500;
       margin: 0;
       @media only screen and (max-width: 768px) {
         font-size: 4rem;
@@ -169,11 +170,7 @@ body {
     }
     h2 {
       font-size: 2rem;
-      text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
-      animation-name: animateShadow;
-      animation-duration: 1s;
-      color: white;
-      animation-iteration-count: infinite;
+      font-weight: 500;
       @media only screen and (max-width: 768px) {
         font-size: 1.5rem;
       }
@@ -195,13 +192,15 @@ body {
     }
     h2 {
       margin: 0 0 5px 0;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       @media only screen and (max-width: 500px) {
         font-size: 1.4rem;
       }
     }
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      font-weight: 600;
       @media only screen and (max-width: 500px) {
         font-size: 1.2rem;
       }

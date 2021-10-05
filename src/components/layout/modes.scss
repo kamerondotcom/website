@@ -1,0 +1,24 @@
+.modes {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+
+.react-switch-bg {
+    
+    > div {
+        &:first-of-type {
+            height: auto !important;
+            left: 10px !important;
+            top: 5px !important;
+            width: 28px !important;
+        }
+        &:last-of-type {
+            height: auto !important;
+            width: 26px !important;
+            right: 8px !important;
+            top: 6px !important;
+        }
+    }
+}

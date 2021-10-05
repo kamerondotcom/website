@@ -28,17 +28,17 @@ const IndexPage = () => (
               Los Angeles, CA - 2012 - 2020
             </div>
             <p>
-              I work with a small team of Engineers and Designers to build low
-              latency branded live stream video tools for businesses. Our
-              platform, built using Node.js and React, allows business to
-              capture and broadcast secure, scalable live streams that can be
+              I work with a small team of Engineers and Designers creating
+              custom apps and low-latency video products for brands. Our tools
+              allow businesses to capture and broadcast secure, scalable live
+              streams and low-latency "zoom-like" video conferences that can be
               customized based on the required use case.
             </p>
             <p>
               Clients include Adobe, Colgate, Ralph Lauren, HBO, Virgin
-              Hyperloop One, Jeremy Scott, and other entertainment clients. Lead
-              a small team in developing technical solution, pitch and producing
-              projects through to launch and beyond.
+              Hyperloop One, Jeremy Scott, Viacom and other entertainment
+              clients. Lead a small team in developing technical solution, pitch
+              and producing projects through to launch and beyond.
             </p>
             <p>
               Technologies used: Javascript, Go, React + Redux, Gatsby, Next.js,

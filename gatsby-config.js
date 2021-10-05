@@ -11,6 +11,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-hotjar`,
       options: {
         includeInDevelopment: true, // optional parameter to include script in development
