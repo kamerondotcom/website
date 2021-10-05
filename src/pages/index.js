@@ -52,11 +52,15 @@ const IndexPage = () => (
             </p>
             <div className={styles.projectThumbs}>
               <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
-              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/rpdr.mp4" />
+              <VideoPlayer
+                alt="RPDR Fan Brunch 2020"
+                src="/video/laina-rauma.mp4"
+              />
               <VideoPlayer
                 alt="Virgin Hyperloop One Simulator"
                 src="/video/simulator.mp4"
               />
+              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/rpdr.mp4" />
               <VideoPlayer
                 alt="Virgin Hyperloop One Route Simulator"
                 src="/video/routes.mp4"
@@ -136,7 +140,17 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Associate Producer</h2>
-            <h3>The X Factor USA (Sony Music / Tiny Horse)</h3>
+            <h3>
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.imdb.com/title/tt1582461/"
+              >
+                The X Factor USA
+              </a>
+              {` `}
+              (Sony Music / Tiny Horse)
+            </h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - 2011 - 2012
             </div>
@@ -169,7 +183,12 @@ const IndexPage = () => (
           </li>
           <li>
             <h2>Bachelor of Arts - Video / Film Production</h2>
-            <h3>Webster University, St. Louis Missouri</h3>
+            <h3>
+              <a target="_blank" className="other" href="https://webster.edu/">
+                Webster University
+              </a>
+              , St. Louis Missouri
+            </h3>
           </li>
         </ul>
       </div>
