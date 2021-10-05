@@ -73,7 +73,10 @@ const IndexPage = () => (
                 />
               </a>
               <a target="_blank" href="http://www.spendyourleapsecondhere.com/">
-                <VideoPlayer alt="HBO Microsites" src="/video/lwt.mp4" />
+                <VideoPlayer
+                  alt="HBO Microsites"
+                  src="/video/last-week-tonight.mp4"
+                />
               </a>
               <VideoPlayer
                 alt="Equinox Microsites"
