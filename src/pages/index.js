@@ -54,6 +54,7 @@ const IndexPage = () => (
               <VideoPlayer alt="Equinox" src="/video/rpdr.mp4" />
               <VideoPlayer alt="Equinox" src="/video/simulator.mp4" />
               <VideoPlayer alt="Equinox" src="/video/routes.mp4" />
+              <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
             </div>
           </li>
           <li className={styles.project}>
