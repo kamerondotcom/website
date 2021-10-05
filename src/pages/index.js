@@ -52,6 +52,11 @@ const IndexPage = () => (
                 alt="RPDR Fan Brunch 2020"
                 src="/video/laina-rauma.mp4"
               />
+
+              <VideoPlayer
+                alt="Ralph Lauren, Ralph's Club Live Stream"
+                src="/video/ralphs-club-1.mp4"
+              />
               <VideoPlayer
                 alt="Virgin Hyperloop One Simulator"
                 src="/video/simulator.mp4"
