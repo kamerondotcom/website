@@ -14,10 +14,12 @@ const IndexPage = () => (
     <SEO title="Portfolio" />
     <div className={styles.home__main}>
       <div className={styles.home__header}>
-        <h1>
-          Kameron Zach
-          {/* <br /> */}
-        </h1>
+        <h1>Kameron Zach</h1>
+        <h2>
+          Product Designer & Engineer
+          <br />
+          based in Los Angeles, CA
+        </h2>
       </div>
       <div className={styles.home__works}>
         <ul>
