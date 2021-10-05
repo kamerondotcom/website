@@ -35,10 +35,10 @@ const Layout = ({ children }) => {
             name="google-site-verification"
             content="Lvc1rJvVjPHWzRQujGhbYWuFePC2kaDl113ui68cVjM"
           />
-          <meta property="og:title" content="Kameron Zach Portfolio" />
+          <meta property="og:title" content="Kameron Zach Work Portfolio" />
           <meta
             property="og:description"
-            content="Kameron Zach Digital Portfolio"
+            content="Kameron Zach Work Portfolio"
           />
           <meta
             property="og:image"

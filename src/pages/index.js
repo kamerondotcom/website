@@ -11,12 +11,12 @@ import * as styles from "./../scss/home.module.scss";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Portfolio" />
+    <SEO title="Work Portfolio" />
     <div className={styles.home__main}>
       <div className={styles.home__header}>
         <h1>Kameron Zach</h1>
         <h2>
-          Product Designer & Engineer
+          Engineer & Product Designer
           <br />
           based in Los Angeles, CA
         </h2>
@@ -30,14 +30,14 @@ const IndexPage = () => (
               Los Angeles, CA - 2012 - Current
             </div>
             <p>
-              I work with a small team of Engineers and Designers creating
-              custom apps and low-latency video products for brands. Our tools
-              allow businesses to capture and broadcast secure, scalable live
-              streams and low-latency "zoom-like" video conferences that can be
-              customized based on the required use case.
+              I work with a small team creating custom apps and low-latency
+              video products for brands. Our tools allow businesses to capture
+              and broadcast secure, scalable live streams and low-latency
+              "zoom-like" video conferences that can be customized based on the
+              required use case.
             </p>
             <p>
-              Clients include Adobe, Colgate, Ralph Lauren, HBO, Virgin
+              Clients include: Adobe, Colgate, Ralph Lauren, HBO, Virgin
               Hyperloop One, Jeremy Scott, Viacom and other entertainment
               clients. Lead a small team in developing technical solution, pitch
               and producing projects through to launch and beyond.
@@ -50,6 +50,11 @@ const IndexPage = () => (
               Technologies included: React JS, Next.js, THREE.js, Redis and
               Pixi.
             </p>
+            <div className={styles.projectThumbs}>
+              <VideoPlayer alt="Equinox" src="/video/rpdr.mp4" />
+              <VideoPlayer alt="Equinox" src="/video/simulator.mp4" />
+              <VideoPlayer alt="Equinox" src="/video/routes.mp4" />
+            </div>
           </li>
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
