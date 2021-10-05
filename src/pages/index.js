@@ -37,7 +37,7 @@ const IndexPage = () => (
               required use case.
             </p>
             <p>
-              Clients include: Adobe, Colgate, Ralph Lauren, HBO, Virgin
+              Clients included: Adobe, Colgate, Ralph Lauren, HBO, Virgin
               Hyperloop One, Jeremy Scott, Viacom and other entertainment
               clients. Lead a small team in developing technical solution, pitch
               and producing projects through to launch and beyond.
@@ -51,9 +51,16 @@ const IndexPage = () => (
               Pixi.
             </p>
             <div className={styles.projectThumbs}>
-              <VideoPlayer alt="Equinox" src="/video/rpdr.mp4" />
-              <VideoPlayer alt="Equinox" src="/video/simulator.mp4" />
-              <VideoPlayer alt="Equinox" src="/video/routes.mp4" />
+              <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
+              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/rpdr.mp4" />
+              <VideoPlayer
+                alt="Virgin Hyperloop One Simulator"
+                src="/video/simulator.mp4"
+              />
+              <VideoPlayer
+                alt="Virgin Hyperloop One Route Simulator"
+                src="/video/routes.mp4"
+              />
               <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
             </div>
           </li>
