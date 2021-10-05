@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         style={{
           width: "99.6vw",
           height: "100vh",
-          top: "0.5%",
+          top: "0%",
           left: "0",
           zIndex: 60,
           backgroundColor: "transparent",
