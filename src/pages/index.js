@@ -65,6 +65,11 @@ const IndexPage = () => (
                 alt="Virgin Hyperloop One Route Simulator"
                 src="/video/routes.mp4"
               />
+              <VideoPlayer
+                alt="Equinox Microsites"
+                src="/video/equinox-lb-1.mp4"
+              />
+
               <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
             </div>
           </li>
