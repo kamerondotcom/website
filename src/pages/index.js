@@ -162,7 +162,15 @@ const IndexPage = () => (
                 The X Factor USA
               </a>
               {` `}
-              (Sony Music / Tiny Horse)
+              (Sony Music /{" "}
+              <a
+                target="_blank"
+                className="other"
+                href="https://tinyhorse.com/"
+              >
+                Tiny Horse
+              </a>
+              )
             </h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - 2011 - 2012
