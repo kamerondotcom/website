@@ -23,10 +23,10 @@ const Layout = ({ children }) => {
   const toggleLightDark = () => {
     dispatch({ type: "TOGGLE_MODE" });
   };
-  console.log("styles", styles);
+
   return (
     <>
-      <div>
+      <div className={isLight ? "light" : "dark"}>
         <Helmet>
           <script src="/js/pace.js" />
           <link href="/css/pace-theme.css" rel="stylesheet" />

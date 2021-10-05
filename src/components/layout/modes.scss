@@ -1,13 +1,14 @@
 .modes {
-    position: absolute;
-    right: 15px;
+    position: fixed;
+    right: 25px;
     top: 15px;
-    display: none;
+    // display: none;
 }
 
 .react-switch-bg {
     
     > div {
+
         &:first-of-type {
             height: auto !important;
             left: 10px !important;
@@ -20,5 +21,31 @@
             right: 8px !important;
             top: 6px !important;
         }
+    }
+}
+
+
+.light {
+    background-color: white;
+    color: black;
+    transition: all 500ms ease-in-out;
+    a {
+        border-bottom: 1px solid black;
+    }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    transition: all 500ms ease-in-out;
+    .modes {
+    
+        > div {
+            border: 1px solid white;
+        }
+
+    }
+    a {
+        border-bottom: 1px solid white;
     }
 }
