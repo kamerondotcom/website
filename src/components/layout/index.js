@@ -12,6 +12,7 @@ import Helmet from "react-helmet";
 import { useModeState } from "../../context/modes";
 import Night from "./../../../static/images/night.png";
 import Day from "./../../../static/images/sun.png";
+import { Scrollbar } from "react-scrollbars-custom";
 import Switch from "react-switch";
 import Header from "../header";
 import styles from "./modes.scss";
@@ -25,8 +26,29 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <>
-      <div className={isLight ? "light" : "dark"}>
+    <div className={isLight ? "light" : "dark"}>
+      <Scrollbar
+        style={{
+          width: "99.6vw",
+          height: "100vh",
+          top: "0.5%",
+          left: "0",
+          zIndex: 60,
+          backgroundColor: "transparent",
+        }}
+        thumbYProps={{
+          renderer: (props) => {
+            const { elementRef, style, ...restProps } = props;
+            return (
+              <div
+                {...restProps}
+                ref={elementRef}
+                style={{ ...style, backgroundColor: isLight ? "#000" : "#fff" }}
+              />
+            );
+          },
+        }}
+      >
         <Helmet>
           <script src="/js/pace.js" />
           <link href="/css/pace-theme.css" rel="stylesheet" />
@@ -59,8 +81,8 @@ const Layout = ({ children }) => {
           />
         </div>
         <main>{children}</main>
-      </div>
-    </>
+      </Scrollbar>
+    </div>
   );
 };
 
