@@ -249,8 +249,15 @@ const IndexPage = () => (
               New York, NY - September 2009 - April 2012
             </div>
             <p>
-              Multimedia / backpack producer for Viacom brands like MTV News,
-              LogoTV and VH1 News. Shot, edited and produced on-air, online
+              Multimedia / backpack producer for Viacom brands like{" "}
+              <a
+                className="other"
+                target="_blank"
+                href="https://www.mtv.com/news/"
+              >
+                MTV News
+              </a>
+              , LogoTV and VH1 News. Shot, edited and produced on-air, online
               short-form content and integrated marketing video projects.
             </p>
           </li>
