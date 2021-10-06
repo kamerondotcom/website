@@ -3,6 +3,7 @@ import { isMobile } from "react-device-detect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
+import ReactPlayer from "react-player";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
@@ -47,12 +48,12 @@ const IndexPage = () => (
               THREE.js, Redis.
             </p>
             <div className={styles.projectThumbs}>
+              <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
               <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
               <VideoPlayer
                 alt="RPDR Fan Brunch 2020"
                 src="/video/laina-rauma.mp4"
               />
-
               <VideoPlayer
                 alt="Ralph Lauren, Ralph's Club Live Stream"
                 src="/video/ralphs-club-1.mp4"
@@ -249,21 +250,18 @@ const IndexPage = () => (
 );
 
 const VideoPlayer = ({ alt, src }) => {
-  const player = createRef();
-  const [playing, setPlaying] = useState(isMobile === false);
-  const playingSingleton = playing ? { autoPlay: true } : {};
   return (
     <span className={styles.videoWrap}>
-      <video
-        ref={player}
-        alt={alt}
-        className={styles.projectThumbs__itemVideo}
-        {...playingSingleton}
+      <ReactPlayer
+        width={"100%"}
+        height="auto"
+        autoPlay
         muted
         loop
-      >
-        <source type="video/mp4" src={src} />
-      </video>
+        playsinline
+        playing={true}
+        url={[{ src: src, type: "video/mp4" }]}
+      />
     </span>
   );
 };
