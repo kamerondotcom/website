@@ -303,8 +303,6 @@ const Scroller = ({ height = "310px", children }) => {
   return (
     <>
       <Scrollbar
-        permanentTrackY={false}
-        permanentTrackX={true}
         className={styles.workDesktop}
         style={{
           width: "100%",
