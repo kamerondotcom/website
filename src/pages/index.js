@@ -217,7 +217,16 @@ const IndexPage = () => (
           </li>
           <li className={styles.project}>
             <h2>Summer Associate</h2>
-            <h3>MTV Networks / Viacom</h3>
+            <h3>
+              MTV Networks /{" "}
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.viacomcbs.com/"
+              >
+                Viacom
+              </a>
+            </h3>
             <div className={styles.projectDate}>New York, NY</div>
             {/* <p>
               Participated in highly competitive 12-week post college work
