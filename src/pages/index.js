@@ -82,8 +82,11 @@ const IndexPage = () => (
                 alt="Equinox Microsites"
                 src="/video/equinox-lb-1.mp4"
               />
-
               <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
+              <VideoPlayer
+                alt="Jeremy Scott Nude Runway Concept"
+                src="/video/js-nude-runway.mp4"
+              />
             </div>
           </li>
           <li className={styles.project}>
