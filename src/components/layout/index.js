@@ -64,9 +64,9 @@ const Layout = ({ children }) => {
           />
           <meta
             property="og:image"
-            content="https://www.kameronzach.com/images/social.jpg"
+            content="https://www.kameron.work/images/social.jpg"
           />
-          <meta property="og:url" content="https://www.kameronzach.com" />
+          <meta property="og:url" content="https://www.kameron.work" />
         </Helmet>
         <div className="modes">
           <Switch
