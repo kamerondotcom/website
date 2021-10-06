@@ -85,6 +85,10 @@ const IndexPage = () => (
                 alt="Jeremy Scott Nude Runway Concept"
                 src="/video/js-nude-runway.mp4"
               />
+              <VideoPlayer
+                alt="Melody Ehsani Custom Designer"
+                src="/video/melody-ehsani.mp4"
+              />
             </div>
           </li>
           <li className={styles.project}>
@@ -175,8 +179,15 @@ const IndexPage = () => (
               >
                 The X Factor USA
               </a>
-              {` `}
-              (Sony Music /{" "}
+              {` `}(
+              <a
+                target="_blank"
+                className="other"
+                href="https://www.sonymusic.com/"
+              >
+                Sony Music
+              </a>{" "}
+              /{" "}
               <a
                 target="_blank"
                 className="other"
