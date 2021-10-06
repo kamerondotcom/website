@@ -64,10 +64,15 @@ const IndexPage = () => (
                   alt="RPDR Fan Brunch 2020"
                   src="/video/lr-new.mp4"
                 />
-                <VideoPlayer
-                  alt="Ralph Lauren, Ralph's Club Live Stream"
-                  src="/video/ralphs-club-1.mp4"
-                />
+                <a
+                  target="_blank"
+                  href="https://www.ralphsclubfragranceevent.com"
+                >
+                  <VideoPlayer
+                    alt="Ralph Lauren, Ralph's Club Live Stream"
+                    src="/video/ralphs-club-1.mp4"
+                  />
+                </a>
                 <VideoPlayer
                   alt="Virgin Hyperloop One Simulator"
                   src="/video/simulator.mp4"
