@@ -257,8 +257,16 @@ const IndexPage = () => (
               >
                 MTV News
               </a>
-              , LogoTV and VH1 News. Shot, edited and produced on-air, online
-              short-form content and integrated marketing video projects.
+              ,{" "}
+              <a
+                className="other"
+                target="_blank"
+                href="http://www.logotv.com/"
+              >
+                LogoTV
+              </a>{" "}
+              and VH1 News. Shot, edited and produced on-air, online short-form
+              content and integrated marketing video projects.
             </p>
           </li>
           <li className={styles.project}>
