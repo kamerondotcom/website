@@ -16,7 +16,7 @@ const IndexPage = () => (
       <div className={styles.home__header}>
         <h1>Kameron Zach</h1>
         <h2>
-          Engineer & Product Designer
+          Product Designer & Engineer
           <br />
           based in Los Angeles, CA
         </h2>
