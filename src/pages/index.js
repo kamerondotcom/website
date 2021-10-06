@@ -29,7 +29,11 @@ const IndexPage = () => (
           <li className={styles.project}>
             <h2>Partner</h2>
             <h3>
-              <a target="_blank" href="https://www.letsbuild.la">
+              <a
+                className="other"
+                target="_blank"
+                href="https://www.letsbuild.la"
+              >
                 Let&apos;s Build
               </a>
             </h3>
