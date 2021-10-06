@@ -2,7 +2,7 @@ import React, { createContext, useReducer, useContext } from "react";
 
 //This is the default settings for your chat app.
 const modeData = {
-  isLight: !(new Date().getHours() > 18 && new Date().getHours() > 6),
+  isLight: !(new Date().getHours() > 17 && new Date().getHours() > 6),
 };
 
 export const ModesContext = createContext({});
