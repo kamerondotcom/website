@@ -2,6 +2,7 @@ import React, { createRef, useState } from "react";
 import { isMobile } from "react-device-detect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import { Scrollbar } from "react-scrollbars-custom";
 import { Link } from "gatsby";
 import ReactPlayer from "react-player";
 import Layout from "../components/layout";
@@ -47,49 +48,60 @@ const IndexPage = () => (
               Technologies used: Javascript, Go, React + Redux, Serverless,
               THREE.js, Redis.
             </p>
-            <div className={styles.projectThumbs}>
-              <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
-              <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
-              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/lr-new.mp4" />
-              <VideoPlayer
-                alt="Ralph Lauren, Ralph's Club Live Stream"
-                src="/video/ralphs-club-1.mp4"
-              />
-              <VideoPlayer
-                alt="Virgin Hyperloop One Simulator"
-                src="/video/simulator.mp4"
-              />
-              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/rpdr.mp4" />
-              <VideoPlayer
-                alt="Virgin Hyperloop One Route Simulator"
-                src="/video/routes.mp4"
-              />
-              <a target="_blank" href="https://confirmationhbo.com/">
+            <Scroller>
+              <div className={styles.projectThumbs}>
+                <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
                 <VideoPlayer
-                  alt="HBO Microsites"
-                  src="/video/confirmation-hbo.mp4"
+                  alt="Skittles x RPDR"
+                  src="/video/skittles-1.mp4"
                 />
-              </a>
-              <a target="_blank" href="http://www.spendyourleapsecondhere.com/">
                 <VideoPlayer
-                  alt="HBO Microsites"
-                  src="/video/last-week-tonight.mp4"
+                  alt="RPDR Fan Brunch 2020"
+                  src="/video/lr-new.mp4"
                 />
-              </a>
-              <VideoPlayer
-                alt="Equinox Microsites"
-                src="/video/equinox-lb-1.mp4"
-              />
-              <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
-              <VideoPlayer
-                alt="Jeremy Scott Nude Runway Concept"
-                src="/video/js-nude-runway.mp4"
-              />
-              <VideoPlayer
-                alt="Melody Ehsani Custom Designer"
-                src="/video/melody-ehsani.mp4"
-              />
-            </div>
+                <VideoPlayer
+                  alt="Ralph Lauren, Ralph's Club Live Stream"
+                  src="/video/ralphs-club-1.mp4"
+                />
+                <VideoPlayer
+                  alt="Virgin Hyperloop One Simulator"
+                  src="/video/simulator.mp4"
+                />
+                <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/rpdr.mp4" />
+                <VideoPlayer
+                  alt="Virgin Hyperloop One Route Simulator"
+                  src="/video/routes.mp4"
+                />
+                <a target="_blank" href="https://confirmationhbo.com/">
+                  <VideoPlayer
+                    alt="HBO Microsites"
+                    src="/video/confirmation-hbo.mp4"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="http://www.spendyourleapsecondhere.com/"
+                >
+                  <VideoPlayer
+                    alt="HBO Microsites"
+                    src="/video/last-week-tonight.mp4"
+                  />
+                </a>
+                <VideoPlayer
+                  alt="Equinox Microsites"
+                  src="/video/equinox-lb-1.mp4"
+                />
+                <VideoPlayer alt="Jeremy Scott" src="/video/jeremy-scott.mp4" />
+                <VideoPlayer
+                  alt="Jeremy Scott Nude Runway Concept"
+                  src="/video/js-nude-runway.mp4"
+                />
+                <VideoPlayer
+                  alt="Melody Ehsani Custom Designer"
+                  src="/video/melody-ehsani.mp4"
+                />
+              </div>
+            </Scroller>
           </li>
           <li className={styles.project}>
             <h2>Senior Engineer</h2>
@@ -129,26 +141,28 @@ const IndexPage = () => (
               to an editorial destination for members during COVID-19 gym
               closures.
             </p>
-            <div className={styles.projectThumbs}>
-              <a target="_blank" href="https://www.equinox.com">
-                <VideoPlayer
-                  alt="Equinox"
-                  src="/video/equinox-3.sameformat.mp4"
-                />
-              </a>
-              <a target="_blank" ti href="https://www.equinox.com">
-                <VideoPlayer
-                  alt="Equinox"
-                  src="/video/equinox-1a.sameformat.mp4"
-                />
-              </a>
-              <a target="_blank" href="https://www.equinox.com">
-                <VideoPlayer
-                  alt="Equinox"
-                  src="/video/equinox-2.sameformat.mp4"
-                />
-              </a>
-            </div>
+            <Scroller height={270}>
+              <div className={styles.projectThumbs}>
+                <a target="_blank" href="https://www.equinox.com">
+                  <VideoPlayer
+                    alt="Equinox"
+                    src="/video/equinox-3.sameformat.mp4"
+                  />
+                </a>
+                <a target="_blank" ti href="https://www.equinox.com">
+                  <VideoPlayer
+                    alt="Equinox"
+                    src="/video/equinox-1a.sameformat.mp4"
+                  />
+                </a>
+                <a target="_blank" href="https://www.equinox.com">
+                  <VideoPlayer
+                    alt="Equinox"
+                    src="/video/equinox-2.sameformat.mp4"
+                  />
+                </a>
+              </div>
+            </Scroller>
           </li>
           <li className={styles.project}>
             <h2>Javascript Course Instructor</h2>
@@ -284,3 +298,41 @@ const VideoPlayer = ({ alt, src }) => {
 };
 
 export default IndexPage;
+
+const Scroller = ({ height = "310px", children }) => {
+  return (
+    <>
+      <Scrollbar
+        permanentTrackY={false}
+        permanentTrackX={true}
+        className={styles.workDesktop}
+        style={{
+          width: "100%",
+          height: height,
+          top: "0%",
+          left: "0",
+          zIndex: 60,
+          backgroundColor: "transparent",
+        }}
+        thumbXProps={{
+          renderer: (props) => {
+            const { elementRef, style, ...restProps } = props;
+            return (
+              <div
+                {...restProps}
+                ref={elementRef}
+                style={{
+                  ...style,
+                  backgroundColor: "#000",
+                }}
+              />
+            );
+          },
+        }}
+      >
+        {children}
+      </Scrollbar>
+      <div className={styles.workMobile}>{children}</div>
+    </>
+  );
+};

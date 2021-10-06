@@ -26,6 +26,21 @@ body {
   margin: 0;
 }
 
+.work {
+  &Desktop {
+    display: block;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &Mobile {
+    display: none;
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
 .contact {
   margin: 30px 0 0 0;
   text-align: center;
@@ -82,7 +97,6 @@ body {
 .project-thumbs {
   margin: 20px 0 0 0;
   display: flex;
-  overflow-x: scroll;
   padding: 0 0 12px 0;
   align-items: flex-start;
   @media only screen and (max-width: 768px) {
