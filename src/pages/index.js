@@ -54,7 +54,7 @@ const IndexPage = () => (
                 <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
                 <VideoPlayer
                   alt="Skittles x RPDR"
-                  src="/video/skittles-1.mp4"
+                  src="/video/skittles-2.mp4"
                 />
                 <VideoPlayer
                   alt="RPDR Fan Brunch 2020"
