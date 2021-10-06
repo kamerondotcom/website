@@ -3,6 +3,7 @@ import { isMobile } from "react-device-detect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { Scrollbar } from "react-scrollbars-custom";
+import useWindowSize from "./../utils/window-size";
 import { Link } from "gatsby";
 import ReactPlayer from "react-player";
 import Layout from "../components/layout";
@@ -300,37 +301,41 @@ const VideoPlayer = ({ alt, src }) => {
 export default IndexPage;
 
 const Scroller = ({ height = "310px", children }) => {
+  const size = useWindowSize();
   return (
     <>
-      <Scrollbar
-        className={styles.workDesktop}
-        style={{
-          width: "100%",
-          height: height,
-          top: "0%",
-          left: "0",
-          zIndex: 60,
-          backgroundColor: "transparent",
-        }}
-        thumbXProps={{
-          renderer: (props) => {
-            const { elementRef, style, ...restProps } = props;
-            return (
-              <div
-                {...restProps}
-                ref={elementRef}
-                style={{
-                  ...style,
-                  backgroundColor: "#000",
-                }}
-              />
-            );
-          },
-        }}
-      >
-        {children}
-      </Scrollbar>
-      <div className={styles.workMobile}>{children}</div>
+      {size.width < 768 ? (
+        <div className={styles.workMobile}>{children}</div>
+      ) : (
+        <Scrollbar
+          className={styles.workDesktop}
+          style={{
+            width: "100%",
+            height: height,
+            top: "0%",
+            left: "0",
+            zIndex: 60,
+            backgroundColor: "transparent",
+          }}
+          thumbXProps={{
+            renderer: (props) => {
+              const { elementRef, style, ...restProps } = props;
+              return (
+                <div
+                  {...restProps}
+                  ref={elementRef}
+                  style={{
+                    ...style,
+                    backgroundColor: "#000",
+                  }}
+                />
+              );
+            },
+          }}
+        >
+          {children}
+        </Scrollbar>
+      )}
     </>
   );
 };
