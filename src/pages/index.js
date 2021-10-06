@@ -28,7 +28,11 @@ const IndexPage = () => (
         <ul>
           <li className={styles.project}>
             <h2>Partner</h2>
-            <h3>Let&apos;s Build</h3>
+            <h3>
+              <a target="_blank" href="https://www.letsbuild.la">
+                Let&apos;s Build
+              </a>
+            </h3>
             <div className={styles.projectDate}>
               Los Angeles, CA - 2012 - Current
             </div>
