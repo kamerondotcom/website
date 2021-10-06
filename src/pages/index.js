@@ -213,8 +213,8 @@ const IndexPage = () => (
             </div>
             <p>
               Multimedia / backpack producer for Viacom brands like MTV News,
-              Logo and VH1 News. Shot, edited and produced on air, online and
-              integrated marketing video projects.
+              LogoTV and VH1 News. Shot, edited and produced on-air, online
+              short-form content and integrated marketing video projects.
             </p>
           </li>
           <li className={styles.project}>
