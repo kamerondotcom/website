@@ -50,10 +50,7 @@ const IndexPage = () => (
             <div className={styles.projectThumbs}>
               <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
               <VideoPlayer alt="Skittles x RPDR" src="/video/skittles-1.mp4" />
-              <VideoPlayer
-                alt="RPDR Fan Brunch 2020"
-                src="/video/laina-rauma.mp4"
-              />
+              <VideoPlayer alt="RPDR Fan Brunch 2020" src="/video/lr-new.mp4" />
               <VideoPlayer
                 alt="Ralph Lauren, Ralph's Club Live Stream"
                 src="/video/ralphs-club-1.mp4"
