@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className={isLight ? "light" : "dark"}>
+    <div key={isLight} className={isLight ? "light" : "dark"}>
       <Scrollbar
         style={{
           width: "99.6vw",
