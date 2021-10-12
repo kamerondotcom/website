@@ -4,7 +4,7 @@ const modeData = {
   isLight: !(new Date().getHours() > 17 && new Date().getHours() > 6),
 };
 
-console.log("modeData", modeData);
+console.log("modeData", modeData, new Date().getHours());
 
 export const ModesContext = createContext({});
 
