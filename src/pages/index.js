@@ -59,6 +59,7 @@ const IndexPage = () => (
             </p>
             <Scroller>
               <div className={styles.projectThumbs}>
+                <VideoPlayer alt="Adobe" src="/video/adobe-n.mp4" />
                 <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
                 <VideoPlayer
                   alt="Skittles x RPDR"
