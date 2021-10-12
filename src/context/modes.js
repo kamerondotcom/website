@@ -1,13 +1,13 @@
 import React, { createContext, useReducer, useContext } from "react";
 
-//This is the default settings for your chat app.
 const modeData = {
   isLight: !(new Date().getHours() > 17 && new Date().getHours() > 6),
 };
 
+console.log("modeData", modeData);
+
 export const ModesContext = createContext({});
 
-//The functions below are accessible through passing parameters to a dispatch function always accessible in our components.
 export const modesReducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_MODE": {
