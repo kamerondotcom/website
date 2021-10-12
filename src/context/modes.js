@@ -32,22 +32,22 @@ export const modesReducer = (state, action) => {
 export const ModesProvider = ({ children }) => {
   const [state, dispatch] = useReducer(modesReducer, modeData);
 
-  useEffect(() => {
-    dispatch({
-      type: "SET_MODE",
-      payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
-    });
-    const timer = setInterval(() => {
-      console.log(!(new Date().getHours() > 17 && new Date().getHours() > 6));
-      dispatch({
-        type: "SET_MODE",
-        payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
-      });
-    }, 1000);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  // useEffect(() => {
+  //   dispatch({
+  //     type: "SET_MODE",
+  //     payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
+  //   });
+  //   const timer = setInterval(() => {
+  //     console.log(!(new Date().getHours() > 17 && new Date().getHours() > 6));
+  //     dispatch({
+  //       type: "SET_MODE",
+  //       payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
+  //     });
+  //   }, 1000);
+  //   return () => {
+  //     clearInterval(timer);
+  //   };
+  // }, []);
 
   return (
     <ModesContext.Provider value={{ state, dispatch }}>
