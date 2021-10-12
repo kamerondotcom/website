@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { Scrollbar } from "react-scrollbars-custom";
 import useWindowSize from "./../utils/window-size";
+import { useModeState } from "../context/modes";
 import { Link } from "gatsby";
 import ReactPlayer from "react-player";
 import Layout from "../components/layout";
@@ -331,6 +332,8 @@ export default IndexPage;
 
 const Scroller = ({ height = "310px", children }) => {
   const size = useWindowSize();
+  const { state = {}, dispatch } = useModeState();
+  const { isLight = true } = state;
   return (
     <>
       {size.width < 768 ? (
@@ -355,7 +358,7 @@ const Scroller = ({ height = "310px", children }) => {
                   ref={elementRef}
                   style={{
                     ...style,
-                    backgroundColor: "#000",
+                    backgroundColor: isLight ? "#000" : "#fff",
                   }}
                 />
               );
