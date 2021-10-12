@@ -37,14 +37,15 @@ export const ModesProvider = ({ children }) => {
       type: "SET_MODE",
       payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
     });
-    setTimeout(() => {
-      //   dispatch({
-      //     type: "SET_MODE",
-      //     payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
-      //   });
-    }, 100);
+    const timer = setInterval(() => {
+      console.log(!(new Date().getHours() > 17 && new Date().getHours() > 6));
+      dispatch({
+        type: "SET_MODE",
+        payload: !(new Date().getHours() > 17 && new Date().getHours() > 6),
+      });
+    }, 1000);
     return () => {
-      // clearInterval(timer);
+      clearInterval(timer);
     };
   }, []);
 
