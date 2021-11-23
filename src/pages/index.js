@@ -61,7 +61,12 @@ const IndexPage = () => (
             <Scroller>
               <div className={styles.projectThumbs}>
                 <VideoPlayer alt="Adobe" src="/video/adobe-n.mp4" />
-                <VideoPlayer alt="My Friend's Place" src="/video/mfp-new.mp4" />
+                <a target="_blank" href="https://www.myfriendsplace.org">
+                  <VideoPlayer
+                    alt="My Friend's Place"
+                    src="/video/mfp-new.mp4"
+                  />
+                </a>
                 <VideoPlayer
                   alt="Skittles x RPDR"
                   src="/video/skittles-2.mp4"
@@ -119,7 +124,7 @@ const IndexPage = () => (
               </div>
             </Scroller>
           </li>
-          <li className={styles.project}>
+          {/* <li className={styles.project}>
             <h2>Senior Engineer</h2>
             <h3>
               <a
@@ -179,7 +184,7 @@ const IndexPage = () => (
                 </a>
               </div>
             </Scroller>
-          </li>
+          </li> */}
           <li className={styles.project}>
             <h2>Javascript Course Instructor</h2>
             <h3>
