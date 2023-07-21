@@ -204,7 +204,7 @@ const IndexPage = () => (
               14-18 students during a 12-week evening program.
             </p>
           </li>
-          <li className={styles.project}>
+          {/* <li className={styles.project}>
             <h2>Associate Producer</h2>
             <h3>
               <a
@@ -239,7 +239,7 @@ const IndexPage = () => (
               Multimedia producer for Seasons 1 & 2. Worked with producers and
               editors to create supplemental digital content for the series.
             </p>
-          </li>
+          </li> */}
           <li className={styles.project}>
             <h2>Associate Producer</h2>
             <h3>
@@ -317,6 +317,7 @@ const IndexPage = () => (
 );
 
 const VideoPlayer = ({ alt, src }) => {
+  console.log("src", src);
   return (
     <span className={styles.videoWrap}>
       <ReactPlayer
@@ -327,7 +328,8 @@ const VideoPlayer = ({ alt, src }) => {
         loop
         playsinline
         playing={true}
-        url={[{ src: src, type: "video/mp4" }]}
+        url={src}
+        // url={[{ src: src, type: "video/mp4" }]}
       />
     </span>
   );
