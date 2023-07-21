@@ -28,6 +28,21 @@ const IndexPage = () => (
       <div className={styles.home__works}>
         <ul>
           <li className={styles.project}>
+            <h2>Software Engineer</h2>
+            <h3>Evernote</h3>
+            <div className={styles.projectDate}>
+              San Diego, CA (Remote) - 2021 - 2023
+            </div>
+            <p>
+              Worked within the product engineering team that maintained the
+              Tasks feature across the Evernote suite of apps. Maintained
+              existing product functionality and implemented new features like
+              recurring tasks and natural language parsing. Worked with product
+              manager to implement proper analytics collection and create new
+              user experiments to guide product strategy and direction.
+            </p>
+          </li>
+          <li className={styles.project}>
             <h2>Partner</h2>
             <h3>
               <a
@@ -39,7 +54,7 @@ const IndexPage = () => (
               </a>
             </h3>
             <div className={styles.projectDate}>
-              Los Angeles, CA - 2012 - Current
+              Los Angeles, CA - 2012 - 2021
             </div>
             <p>
               I work with a small team creating custom apps and low-latency
